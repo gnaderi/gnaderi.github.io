@@ -1,0 +1,8 @@
+canvas {
+    position: relative; top:50%;
+    left:5%;
+    margin-left:-50vmin;
+    width:10vmin;
+    height:10vmin;
+    overflow:hidden;
+}
