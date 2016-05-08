@@ -4984,6 +4984,23 @@ a.thumbnail.active {
 .alert-warning .alert-link {
   color: #66512c;
 }
+
+
+
+
+.alert-zeresh {
+  color: #180605;
+  background-color: #fcdb1f;
+  border-color: #8a1310;
+}
+.alert-zeresh hr {
+  border-top-color: #f7e1b5;
+}
+.alert-zeresh .alert-link {
+  color: #66512c;
+}
+
+
 .alert-danger {
   color: #a94442;
   background-color: #f2dede;

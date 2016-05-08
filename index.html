@@ -9,11 +9,13 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <meta name="keywords"
-          content="My Skills Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template"/>
-    <script src="js/jquery-1.11.1.min.js"/>
+    <meta name="keywords" content="My Skills Responsive web template, Bootstrap Web Templates,"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
     <script type="application/x-javascript"> addEventListener("load", function () {
         setTimeout(hideURLbar, 0);
     }, false);
@@ -35,8 +37,31 @@
 
 </head>
 <body>
-<!--<canvas></canvas>-->
-<!--<script src="js/widget.js"></script>-->
+
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="index.html">Home</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li><a href="#">Resume</a></li>
+            <li><a href="pages/git-tips.html">Git Tips</a></li>
+            <li><a href="#">Java Tips</a></li>
+            <li><a href="#">Discusses</a></li>
+        </ul>
+
+        <form class="navbar-form navbar-left" role="search" action="https://www.google.com/search?g=">
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Search">
+            </div>
+            <button type="submit" class="btn btn-default">Search</button>
+        </form>
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Login</a></li>
+        </ul>
+    </div>
+</nav>
+
 <!--start-header-section-->
 <div class="header-section">
     <div class="continer">
@@ -53,20 +78,6 @@
 <!--end header-section-->
 
 
-<!--Certificate Section-->
-<div class="header-section">
-    <div class="continer" style="width: 40%; float:left">
-        <a href="images/CSM_Certificate.png" target="_blank">
-            <img src="images/CSM_Certificate.png" width="45%" height="30%">
-            <h4>Certified ScrumMaster<span>®</span></h4></a>
-    </div>
-
-    <div class="continer" style="width: 40%; float:right">
-        <a href="images/Lawroom.png" target="_blank">
-            <img src="images/Lawroom.png" width="45%" height="30%">
-            <h4>Information Security & Privacy</h4></a>
-    </div>
-</div>
 <!--start-experience-section-->
 <div class="experience-section">
     <div class="container">
@@ -241,6 +252,25 @@
         </div>
     </div>
 </div>
+
+<!--Certificate Section-->
+<div class="container-fluid bg-3 text-center">
+    <h3>My Certificates </h3>
+    <div class="row">
+        <div class="col-sm-4">
+            <a href="images/CSM_Certificate.png" target="_blank">
+                <img src="images/CSM_Certificate.png" width="45%" height="30%">
+                <h5>Certified ScrumMaster<span>®</span></h5></a>
+        </div>
+
+        <div class="col-sm-4">
+            <a href="images/Lawroom.png" target="_blank">
+                <img src="images/Lawroom.png" width="45%" height="30%">
+                <h5>Information Security & Privacy</h5></a>
+        </div>
+    </div>
+</div>
+
 <!--End of Skills-->
 <div class="container">
     <h3><span class="glyphicon glyphicon-paperclip"></span> Projects I Completed</h3>
