@@ -1,0 +1,437 @@
+/*Main CSS for index page*/
+
+.fbody {
+    background: none repeat scroll 0 0 #3d263a;
+    background: #380b36;
+    background: -moz-linear-gradient(left, #d06494 0, #931e5a 0, #401246 79%);
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%, #d06494), color-stop(0%, #931e5a), color-stop(79%, #401246));
+    background: -webkit-linear-gradient(left, #d06494 0, #931e5a 0, #401246 79%);
+    background: -o-linear-gradient(left, #d06494 0, #931e5a 0, #401246 79%);
+    background: -ms-linear-gradient(left, #d06494 0, #931e5a 0, #401246 79%);
+    background: linear-gradient(to right, #d06494 0, #931e5a 0, #401246 79%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#D06494', endColorstr='#401246', GradientType=1);
+    color: #fff;
+    float: left;
+    width: 100%;
+    font-size: 10px;
+}
+
+.pull-right {
+    float: right !important
+}
+
+.pull-left {
+    float: left !important
+}
+
+body {
+    padding-top: 50px
+}
+
+body.purple-bg {
+    background-color: #548;
+    color: #fff
+}
+
+body.purple-bg a {
+    color: inherit
+}
+
+a:focus, a:active {
+    text-decoration: none
+}
+
+h1, h3, h4, h5, button, a {
+    font-weight: 400
+}
+
+.light {
+    font-weight: 300
+}
+
+.medium {
+    font-weight: 400
+}
+
+.green {
+    color: #18be97
+}
+
+img {
+    max-width: 100%
+}
+
+.nav-logo {
+    max-height: 44px;
+    position: relative;
+    top: -12px
+}
+
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both
+}
+
+@media (min-width: 767px) {
+    .btn-search {
+        border: 1px solid #548;
+        border-radius: 3px;
+        padding: 4px 20px;
+        margin-left: 25px;
+        margin-top: 9px;
+        background-color: #fff;
+        color: #548;
+        font-weight: 600
+    }
+
+    .btn-search:hover, .btn-search:focus {
+        background-color: #548;
+        color: #fff;
+        outline: 0
+    }
+}
+
+@media (min-width: 767px) {
+    .btn-skill {
+        border: 1px solid #548;
+        border-radius: 3px;
+        padding: 4px 20px;
+        margin-left: 25px;
+        margin-top: 9px;
+        background-color: #fff;
+        color: #548;
+        font-weight: 400
+    }
+
+    .btn-skill:hover, .btn-skill:focus {
+        background-color: #548;
+        color: #fff;
+        outline: 0
+    }
+}
+
+@media (max-width: 989px) {
+    .footer {
+        padding-top: 40px;
+        padding-bottom: 30px
+    }
+}
+
+.footer a {
+    color: inherit
+}
+
+.footer a:hover {
+    color: #fba225;
+    text-decoration: none
+}
+
+.footer ul {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none
+}
+
+.footer-logo {
+    position: absolute;
+    top: -0px;
+    left: 50%;
+    margin-left: -32.5px
+}
+
+.footer-social {
+    margin-top: 36px;
+    padding-bottom: 40px
+}
+
+.footer-social li {
+    display: inline-block;
+    width: 45px;
+    font-size: 26px
+}
+
+.footer-link-title {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-weight: 600
+}
+
+@media (max-width: 989px) {
+    .footer-link-holder {
+        margin-bottom: 15px
+    }
+}
+
+.footer-links {
+    font-size: 16px
+}
+
+.footer-links li:not(:last-child) {
+    padding-bottom: 2px
+}
+
+.bg-grey {
+    background-color: #bccbde
+}
+
+.bg-skye {
+    background-color: #c2dde6
+}
+
+.bg-sea {
+    background-color: #e6e9f0;
+    border-color: #63b6b1;
+}
+
+.bg-liver {
+    background-color: #870d0d
+}
+
+.bg-blood {
+    background-color: #bb141e
+}
+
+.bg-gold {
+    background-color: #e6af4b
+}
+
+.txt-black {
+    color: #000000
+}
+
+.txt-black-center {
+    color: #000000;
+    text-align: center;
+    margin-top: 2.5em;
+    padding-top: inherit;
+}
+.txt-black-center h5 {
+    color: #000000;
+    text-align: center;
+    margin-top: 2.5em;
+    padding-top: inherit;
+}
+.btn.btn-gnd :hover, .btn.btn-gnd:focus {
+    background-color: #548;
+    color: #fff;
+    outline: 2px;
+}
+
+.btn.btn-gnd {
+    color: #65197d;
+    background-color: #ffffff;
+    border-color: #881775;
+}
+
+.btn-gnd.focus {
+    color: #fff;
+    background-color: #286090;
+    border-color: #122b40
+}
+
+.btn-gnd:hover {
+    color: #fff;
+    background-color: #548;
+    border-color: #204d74
+}
+
+.bg-cert {
+    color: #ffab3e;
+    background-color: #b57eff;
+    border-color: #fffa1c
+}
+
+.intro {
+    background-image: url(../../images/logos/eagle.jpg);
+    border: solid 2px;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: contain;
+    color: #000000;
+    font-size: 1.5em;
+
+}
+
+body a {
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    padding: 0 0;
+    margin: 0 0;
+}
+
+p {
+    padding: 0 0;
+    margin: 0 0;
+}
+
+ul {
+    padding: 0 0;
+    margin: 0 0;
+}
+
+span.glyphicon.glyphicon-triangle-bottom {
+    font-size: 2em;
+    color: #fff;
+    background-color: #a35633;
+    padding: 0.5em 2em;
+    border-radius: 5px 5px 0 0;
+    margin-top: 2.5em;
+}
+
+.experience-section {
+    padding: 4em 0;
+}
+
+span.exclamation {
+    color: #c1ff1b;
+    font-size: 1em;
+}
+
+.experience {
+    padding: 1em 0 0;
+    margin: 0 0 0 7px;
+    font-size: 1.7em;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.experience a {
+    padding-left: 5px;
+    padding-right: 10px;
+    color: #ffffff;
+    font-size: 1.0em;
+}
+
+.experience label {
+    padding-left: 5px;
+    padding-right: 5px;
+    color: #ffffff;
+    font-size: 1.1em;
+}
+
+input[type="text"].form-control {
+    border-color: #ffffff;
+}
+
+.menu {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+ul.nav a:hover {
+    color: #651a76 !important;
+}
+
+.menu:hover {
+    background: rgb(208, 207, 206);
+}
+
+.btn-purple {
+    color: #548;
+    background-color: #fff;
+    border-color: #548;
+    transition: all .2s;
+    font-weight: 600
+}
+
+.btn-purple:hover {
+    color: #fff;
+    background-color: #548;
+    border-color: #548
+}
+
+.footer {
+    position: relative;
+    line-height: 1.4em;
+    margin: 0;
+    padding: 2px;
+    color: #0c0a07;
+    background: url('../../images/bg-noise.png') #f2f2f2;
+}
+
+.copy-right {
+    padding: 2em 0;
+    color: #fffdff;
+    text-align: center;
+    background: url('../../images/grad-purple.jpg') repeat-y left top #471049;
+
+}
+
+.bottom-menu-align {
+    text-align: left;
+    padding-left: 15%;
+
+}
+
+.menu-top {
+    margin-top: 5%;
+}
+
+.footer-bottom {
+    margin-top: 1em;
+}
+
+.footer-top p {
+    font-size: 0.9em;
+    color: #1B1B1B;
+    font-weight: 400;
+}
+
+.footer-top a {
+    font-size: 1em;
+    color: #fffdff;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+.footer-top a:hover {
+    color: #1B1B1B;
+}
+
+.footer-top a {
+    margin: 0 6px 0 6px;
+}
+
+#toTop {
+    display: none;
+    text-decoration: none;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    overflow: hidden;
+    width: 48px;
+    height: 48px;
+    border: none;
+    text-indent: 100%;
+    background: url("../../images/to-top.png") no-repeat 0px 0px;
+}
+
+.workavatar {
+    /*background: #380b36;*/
+    background: -moz-linear-gradient(left, #58091e 0, #fffff7 0, #b9aaa4 90%);
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%, #58091e), color-stop(0%, #fffff7), color-stop(90%, #b9aaa4));
+    background: -webkit-linear-gradient(left, #58091e 0, #fffff7 0, #b9aaa4 90%);
+    background: -o-linear-gradient(left, #58091e 0, #fffff7 0, #b9aaa4 90%);
+    background: -ms-linear-gradient(left, #58091e 0, #fffff7 0, #b9aaa4 90%);
+    background: linear-gradient(to right, #58091e 0, #fffff7 0, #b9aaa4 90%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fffff7', endColorstr='#761d51', GradientType=1);
+    color: #fff;
+    /*float: left;*/
+    font-size: 10px;
+    /*width:10%;*/
+    margin: 5px;
+    border: 1px solid #fff3bf;
+    border-radius: 500px;
+    -webkit-border-radius: 500px;
+    -moz-border-radius: 500px;
+    border: 1px solid #761d51;
+}

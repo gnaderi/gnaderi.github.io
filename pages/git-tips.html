@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/html">
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/html">
 <head>
     <title>Git Basics - Tips and Tricks</title>
 
@@ -38,16 +38,17 @@
     <!---End-smoth-scrolling---->
 
 </head>
+<body>
 
-<nav class="navbar navbar-default">
-    <div class="container-fluid">
-        <div class="navbar-header">
+<nav class='navbar navbar-fixed-top navbar-default' role=navigation>
+    <div class=container>
+        <div class=navbar-header>
             <a class="navbar-brand" href="../index.html">Home</a>
         </div>
         <ul class="nav navbar-nav">
-            <li><a href="#">Resume</a></li>
-            <li class="active"><a href="git-tips.html">Git Tips</a></li>
-            <li><a href="#">Java Tips</a></li>
+            <li><a href="cv.html">My CV</a></li>
+            <li class="active"><a href="#">Git Tips</a></li>
+            <li><a href="../pages/email-tips.html">Effective Email Tips</a></li>
             <li><a href="#">Discusses</a></li>
         </ul>
 
@@ -93,7 +94,8 @@
             <div class="row alert-zeresh">
                 <h3>Reset Branch</h3>
                 <figure class=highlight>
-                    <pre><code class=language-bash data-lang=bash><span class=gp>$ </span>git reset --hard</code></pre>
+                        <pre><code class=language-bash data-lang=bash><span
+                                class=gp>$ </span>git reset --hard</code></pre>
                 </figure>
             </div>
 
@@ -126,7 +128,8 @@
                 <figure class=highlight>
                 <pre><code class=language-bash data-lang=bash><span
                         class=gp>$ </span> git commit -a -m "MessageText"</code></pre>
-                    I suggest to use an agreedo message format: "Domain/Feature:TypeOfFix:Jira-ID: A short explain." i.e
+                    I suggest to use an agreedo message format: "Domain/Feature:TypeOfFix:Jira-ID: A short explain."
+                    i.e
                     "APEX:Bug:MTCH-228: OPC limitation for the array in the client."
                 </figure>
             </div>
@@ -249,48 +252,83 @@
     </div>
     </p>
 
-
-    <!--Other Git Useful Tricks-->
+    <!--Squash Tips-->
     <p class="lead">
     <div class="bg-info">
         <div class="glyphicon-apple">
             <div class="container">
                 <div class="row alert-warning">
+                    <h3>Squash your latests commits into one:</h3>
+                    This is a great way to group certain changes together before sharing them with others. ~ Here’s how
+                    to squash some commits into one. Let’s say this is your current git log:
+                    <a href="../images/git-tip/git-log-5.png" target="_blank">
+                        <img src="../images/git-tip/git-log-5.png"></a>
+                    <br/>
+                    <br/>
+                    Now, you want to squash your last three commits in one to make your history look pretty. The
+                    command to
+                    accomplish that is:
+                    <figure class=highlight>
+                            <pre><code class=language-bash data-lang=bash>
+                                <span class=gp>$ </span>git rebase -i HEAD~3
+                            </code> </pre>
+                    </figure>
+
+                    <small>This will open up your editor with the following:</small>
+                    <br/>
+                    <a href="../images/git-tip/gitrebase.png" target="_blank">
+                        <img src="../images/git-tip/gitrebase.png"></a>
+                    <br/>
+                    <br/>
+                    <small>Change all pick in beggingin of all commist to Squash except that one that you want to be  the presenter or You can change the message!</small>
+                    <br/>
+                    <a href="../images/git-tip/ChangCommitMessageInSquash.png" target="_blank">
+                        <img src="../images/git-tip/ChangCommitMessageInSquash.png"></a>
+                    <br/>
+                    <br/>
+                    <small>Press Escape and ":wq" and perss Enter.</small>
+                    <small>It will show a simliar page with  commit messages, put a custom message and continue...</small>
+                    <small>Run a git log -3 : You will see your commit changes and consider as one commit.</small>
+                    <figure class=highlight>
+                            <pre><code class=language-bash data-lang=bash>
+                                <span class=gp>$ </span>git log -3
+                            </code> </pre>
+                    </figure>
+                    <small class="bg-warning">You need to push to server for !</small>
+                    <figure class=highlight>
+                            <pre><code class=language-bash data-lang=bash>
+                                <span class=gp>$ </span>git push -u origin master
+                            </code> </pre>
+                    </figure>
+
+                </div>
+                <!--Other Git Useful Tricks-->
+
+                <div class="row alert-success">
                     <h3>Other Useful Git Tricks</h3>
                     <small>Difference between two commit as a .patch file:</small>
                     <figure class=highlight>
-    <pre><code class=language-bash data-lang=bash>
-    <span class=gp>$ </span> git diff e71516d12e818e1676db6854e11a8bbcabd54ca2 f0e2dfbf64f28011a06d89cb500f988ad3d96f0a > ~/dif_file_result.patch
-    </code> </pre>
+                        <pre><code class=language-bash data-lang=bash>
+                        <span class=gp>$ </span> git diff e71516d12e818e1676db6854e11a8bbcabd54ca2 f0e2dfbf64f28011a06d89cb500f988ad3d96f0a > ~/dif_file_result.patch
+                        </code> </pre>
                     </figure>
                     <small>Apply Patch created by Git:</small>
                     <figure class=highlight>
-    <pre><code class=language-bash data-lang=bash>
-    <span class=gp>$ </span>   git apply ~/dif_file_result.patch
-    </code> </pre>
+                        <pre><code class=language-bash data-lang=bash>
+                        <span class=gp>$ </span>   git apply ~/dif_file_result.patch
+                        </code> </pre>
                     </figure>
                     <small>Apply Patch created by Git:</small>
                     <figure class=highlight>
-    <pre><code class=language-bash data-lang=bash>
-    <span class=gp>$ </span>   git stash show -p stash@{0} > ~/updateUserController.patch
-    </code> </pre>
+                        <pre><code class=language-bash data-lang=bash>
+                        <span class=gp>$ </span>   git stash show -p stash@{0} > ~/updateUserController.patch
+                        </code> </pre>
                     </figure>
                 </div>
             </div>
         </div>
     </div>
     </p>
-
-
-    <div>
-
-    </div>
-    <div>
-
-
-    </div>
 </div>
-</div>
-</p>
 </body>
 </html>
