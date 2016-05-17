@@ -1,341 +1,472 @@
 <!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/html">
 <http-equivad>
-	<title>Git Basics - Tips and Tricks</title>
+    <title>Git Basics - Tips and Tricks</title>
 
-	<link href="../css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
-	<link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
-	<link href="../css/bootstrap-theme.css" rel="stylesheet" type="text/css" media="all">
-	<link href="../css/gcss/custom.css" rel="stylesheet" type="text/css" media="all"/>
+    <link href="../css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+    <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
+    <link href="../css/bootstrap-theme.css" rel="stylesheet" type="text/css" media="all">
+    <link href="../css/gcss/custom.css" rel="stylesheet" type="text/css" media="all"/>
 
-	<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
-	<link rel="icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../favicon.ico" type="image/x-icon">
 
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-	<meta name="keywords" content="My Skills Responsive web template, Bootstrap Web Templates,"/>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<script src="../js/jquery.min.js"></script>
-	<script src="../js/bootstrap.min.js"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="keywords" content="My Skills Responsive web template, Bootstrap Web Templates,"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
 
-	<script type="application/x-javascript"> addEventListener("load", function () {
-		setTimeout(hideURLbar, 0);
-	}, false);
-	function hideURLbar() {
-		window.scrollTo(0, 1);
-	} </script>
-	<!---- start-smoth-scrolling---->
-	<script type="text/javascript" src="../js/move-top.js"></script>
-	<script type="text/javascript" src="../js/easing.js"></script>
-	<script type="text/javascript">
-		jQuery(document).ready(function ($) {
-			$(".scroll").click(function (event) {
-				event.preventDefault();
-				$('html,body').animate({scrollTop: $(this.hash).offset().top}, 1200);
-			});
-		});
-	</script>
-	<!---End-smoth-scrolling---->
+    <script type="application/x-javascript"> addEventListener("load", function () {
+        setTimeout(hideURLbar, 0);
+    }, false);
+    function hideURLbar() {
+        window.scrollTo(0, 1);
+    } </script>
+    <!---- start-smoth-scrolling---->
+    <script type="text/javascript" src="../js/move-top.js"></script>
+    <script type="text/javascript" src="../js/easing.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+            $(".scroll").click(function (event) {
+                event.preventDefault();
+                $('html,body').animate({scrollTop: $(this.hash).offset().top}, 1200);
+            });
+        });
+    </script>
+    <!---End-smoth-scrolling---->
 
 </http-equivad>
 <body class="fbody" data-offset=90 data-spy=scroll">
 <header>
-	<nav class='navbar navbar-fixed-top navbar-default' role=navigation>
-		<div class=container>
-			<div class=navbar-header>
-				<button class=navbar-toggle data-toggle=collapse type=button><span
-						class=sr-only> Toggle Navigation </span> <span class=icon-bar></span> <span
-						class=icon-bar></span> <span class=icon-bar></span></button>
-				<a class='navbar-brand animated' href='../index.html'>
-					<img src="../images/logos/logo-s.svg" class="nav-logo"></a>
-			</div>
-			<div class="collapse navbar-collapse">
-				<ul class='nav navbar-nav animated'>
-					<li class=" menu"><a href="../index.html">Home</a></li>
-					<li class="menu"><a href="../pages/cv.html">CV</a></li>
-					<li class="menu active"><a href="#">Git</a></li>
-					<li class="menu"><a href="letters.html">Letters</a></li>
-					<li class="menu"><a href="#">Blog</a></li>
-					<li>
-						<form class="navbar-form navbar-left" action="https://www.google.com/search?g=">
-							<div class="form-group">
-								<input type="text" class="form-control" placeholder="Search">
-							</div>
-							<button type="submit" class="btn-search">Search</button>
-						</form>
-					</li>
-					<li class="menu"><a href="#">Login</a></li>
-					<li><br/></li>
+    <nav class='navbar navbar-fixed-top navbar-default' role=navigation>
+        <div class=container>
+            <div class=navbar-header>
+                <button class=navbar-toggle data-toggle=collapse type=button><span
+                        class=sr-only> Toggle Navigation </span> <span class=icon-bar></span> <span
+                        class=icon-bar></span> <span class=icon-bar></span></button>
+                <a class='navbar-brand animated' href='../index.html'>
+                    <img src="../images/logos/logo-s.svg" class="nav-logo"></a>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class='nav navbar-nav animated'>
+                    <li class=" menu"><a href="../index.html">Home</a></li>
+                    <li class="menu"><a href="../pages/cv.html">CV</a></li>
+                    <li class="menu active"><a href="#">Git</a></li>
+                    <li class="menu"><a href="#">Blog</a></li>
+                    <li>
+                        <form class="navbar-form navbar-left" action="https://www.google.com/search?g=">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search">
+                            </div>
+                            <button type="submit" class="btn-search">Search</button>
+                        </form>
+                    </li>
+                    <li class="menu"><a href="#">Login</a></li>
+                    <li><br/></li>
 
-				</ul>
-			</div>
-		</div>
-	</nav>
+                </ul>
+            </div>
+        </div>
+    </nav>
 </header>
-<h2>
-	<div class="page-header text-center">
-		<div class="bg-warning">
-			<img src="../images/education.png">Git Tips and Tricks
-		</div>
-	</div>
-</h2>
-<div class="btn-primary">
-	<!--Branch Tips-->
-	<p class="lead">
-	<div class="bg-info">
-		<div class="container">
-			<div class="row alert-success">
-				<h3>Check out a remote branch:</h3>
+<!--Git Basics - Tips and Tricks-->
+<div class="container bg-grey">
+    <br/> <br/>
+    <h2 class="panel-heading bg-sea txt-black">
+        <span> <img class="imgIcon" src="../images/git/git-cmd1.png">  </span> Git Daily Commands & Concepts</h2>
+    <div class="jumbotron bg-skye">
+        <div class="row bg-skye">
+            <div class="panel panel-default">
+                <div class="panel-heading bg-sea">
+                    <h3><span> <img class="imgIcon" src="../images/git/git-cmd2.png">  </span> Git Branching Related
+                                                                                               Operations </h3>
+                </div>
+                <div class="panel-body bg-sea">
+                    <div class="row bg-sea txt-black">
+                        <h5>Check out a remote branch:</h5>
+                        <figure class=highlight>
+                                    <pre><code class="language-bash gitcmd" data-lang=bash><span
+                                            class=gp> $</span> git clone https://github.com/naderighodrat/naderighodrat.github.io.git
+          <label>//Clone your repository.</label>
+         <span class=gp> $</span> git branch -a<label>//Show list of all branches.</label>
+         <span class=gp> $</span> git checkout -b "branchName"
+         <span class=gp> $</span> git status
+         </code>
+                                    </pre>
+                        </figure>
+                    </div>
+                    <div class="row bg-sea txt-black">
+                        <h5>Reset Branch</h5>
+                        <figure class=highlight>
+                        <pre><code class="language-bash gitcmd" data-lang=bash><span
+                                class=gp>$ </span>git reset --hard</code></pre>
+                        </figure>
+                    </div>
 
-				<figure class=highlight><pre>
-<code class=language-bash data-lang=bash>
-<span class=gp> $</span> git clone https://github.com/naderighodrat/naderighodrat.github.io.git
- <label>//Clone your repository.</label>
-<span class=gp> $</span> git branch -a<label>//Show list of all branches.</label>
-<span class=gp> $</span> git checkout -b "branchName"
-<span class=gp> $</span> git status
-</code>
-</pre>
-				</figure>
+                    <div class="row bg-sea txt-black">
+                        <h5>Create a local branch:</h5>
+                        <figure class=highlight>
+                      <pre><code class="language-bash gitcmd" data-lang=bash><span
+                              class=gp>$ </span> git branch -d "localBranchName"</code></pre>
+                        </figure>
+                    </div>
+                    <div class="row bg-sea txt-black">
+                        <h5>Delete a remote branch:</h5>
+                        <figure class=highlight>
+                      <pre><code class="language-bash gitcmd" data-lang=bash><span
+                              class=gp>$ </span> git push --delete origin  "remoteBranchName"</code></pre>
+                        </figure>
+                    </div>
 
-			</div>
-			<div class="row alert-zeresh">
-				<h3>Reset Branch</h3>
-				<figure class=highlight>
-                        <pre><code class=language-bash data-lang=bash><span
-								class=gp>$ </span>git reset --hard</code></pre>
-				</figure>
-			</div>
-
-			<div class="row alert-warning">
-				<h3>Create a local branch:</h3>
-				<figure class=highlight>
-            <pre><code class=language-bash data-lang=bash><span
-					class=gp>$ </span> git branch -d "localBranchName"</code></pre>
-				</figure>
-			</div>
-			<div class="row alert-danger">
-				<h3>Delete a remote branch:</h3>
-				<figure class=highlight>
-            <pre><code class=language-bash data-lang=bash><span
-					class=gp>$ </span> git push --delete origin  "remoteBranchName"</code></pre>
-				</figure>
-			</div>
-
-			<div class="row alert-success">
-				<h3>Search for a "branchName" in branches: </h3>
-				<figure class=highlight>
-            <pre><code class=language-bash data-lang=bash><span
-					class=gp>$ </span>git branch -a|grep gnaderi</code></pre>
-					Search for "gnaderi" in branches list.
-				</figure>
-			</div>
-
-			<div class="row alert-warning">
-				<h3>Commit && Commit Message!</h3>
-				<figure class=highlight>
-                <pre><code class=language-bash data-lang=bash><span
-						class=gp>$ </span> git commit -a -m "MessageText"</code></pre>
-					I suggest to use an agreedo message format: "Domain/Feature:TypeOfFix:Jira-ID: A short explain."
-					i.e
-					"APEX:Bug:MTCH-228: OPC limitation for the array in the client."
-				</figure>
-			</div>
-
-			<div class="row alert-success">
-				<h3>Push local commits to your git Server!</h3>
-				<figure class=highlight>
-            <pre><code class=language-bash data-lang=bash><span
-					class=gp>$ </span> git push -u origin "YourBranchName"</code></pre>
-				</figure>
-			</div>
-
-		</div>
-	</div>
-	</p>
-
-
-	<!--Merge Tips-->
-	<p class="lead">
-		<div class="bg-info">
-			<div class="glyphicon-apple alert-success">
-				<div class="container">
-					<div class="row alert-warning">
-						<h3>Merging develop to the personal branch.</h3>
-						<figure class=highlight>
-            <pre><code class=language-bash data-lang=bash><span
-					class=gp>$ </span> git fetch origin</code>
-                $ </span> git merge origin/[branchName]</code></pre>
-						</figure>
-					</div>
-					<div class="row alert-danger">
-						<h3>Keep either file in merge conflicts:</h3>
-						<figure class=highlight>
-            <pre><code class=language-bash data-lang=bash><span
-					class=gp>$ </span> git checkout   --ours "fileName.ext"</code> </pre>
-						</figure>
-						<h3>Keep their file in merge conflicts:</h3>
-						<figure class=highlight>
-            <pre><code class=language-bash data-lang=bash><span
-					class=gp>$ </span> git checkout --theirs _layouts/default.html</code> </pre>
-						</figure>
-						<a href="http://gitready.com/advanced/2009/02/25/keep-either-file-in-merge-conflicts.html">More
-																												   details
-																												   here: keep-either-file-in-merge-conflicts</a>
-					</div>
-					<div class="row alert-zeresh">
-						<h3>Merging your personal branch into the develop:</h3>
-						<figure class=highlight> <pre><code class=language-bash data-lang=bash>
-    <span class=gp>$ </span> git checkout develop
-    <span class=gp>$ </span> git fetch origin
-    <span class=gp>$ </span> git pull
-    <span class=gp>$ </span> git rebase origin/[YOUR_BRANCH]
-    <span class=gp>$ </span> git push -f -u origin/develop</code></pre>
-						</figure>
-					</div>
-
-					<div class="row bg-warning">
-						<h3>Merge your branch and keep all your commits as ONE commit message :</h3>
-						<figure class=highlight>
-            <pre><code class=language-bash data-lang=bash><span
-					class=gp>$ </span> git merge --squash [YOUR_BRANCH]</code>
+                    <div class="row bg-sea txt-black">
+                        <h5>Search for a "branchName" in branches: </h5>
+                        <figure class=highlight>
+            <pre><code class="language-bash gitcmd" data-lang=bash><span
+                    class=gp>$ </span>git branch -a|grep gnaderi</code>
+            <span>[Search for "gnaderi" in branches list.]</span>
             </pre>
-						</figure>
-					</div>
 
-					<div class="row bg-warning">
-						<h3>Compare and Diff two branches.:</h3>
-						<figure class=highlight>
-            <pre><code class=language-bash data-lang=bash><span
-					class=gp>$ </span> git merge --squash [YOUR_BRANCH]</code>
+                        </figure>
+
+                    </div>
+
+                    <div class="row bg-sea txt-black">
+                        <h5>Commit && Commit Message!</h5>
+                        <figure class=highlight>
+                <pre><code class="language-bash gitcmd" data-lang=bash><span
+                        class=gp>$ </span> git commit -a -m "MessageText"
+                <span>[I suggest to use an agreedo message format: "Domain/Feature:TypeOfFix:Jira-ID: A short explain." i.e "APEX:Bug:MTCH-228: OPC limitation for the array in the client."]</span>
+                    </code></pre>
+                        </figure>
+                    </div>
+
+                    <div class="row bg-sea txt-black">
+                        <h5>Push local commits to your git Server!</h5>
+                        <figure class=highlight>
+            <pre><code class="language-bash gitcmd" data-lang=bash><span
+                    class=gp>$ </span> git push -u origin "YourBranchName"</code></pre>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row bg-skye">
+            <div class="panel panel-default">
+                <div class="panel-heading bg-sea">
+                    <h3>
+                       <span> <img class="imgIcon" src="../images/git/git-cmd4.png"/>
+                        Merging Branch Commands and Tectonics.</span>
+                    </h3>
+                </div>
+                <div class="panel-body bg-sea">
+                    <div class="container">
+                        <div class="row bg-sea txt-black">
+                            <h5>Merging develop into the personal branch.</h5>
+                            <figure class=highlight>
+            <pre><code class="language-bash gitcmd" data-lang=bash><span
+                    class=gp>$ </span> git fetch origin</code>$ </span> git merge origin/[branchName]</code></pre>
+                            </figure>
+                        </div>
+                        <div class="row bg-sea txt-black">
+                            <h5>Keep either file in merge conflicts:</h5>
+                            <figure class=highlight>
+            <pre><code class="language-bash gitcmd" data-lang=bash><span
+                    class=gp>$ </span> git checkout   --ours "fileName.ext"</code> </pre>
+                            </figure>
+                            <h5>Keep their file in merge conflicts:</h5>
+                            <figure class=highlight>
+            <pre><code class="language-bash gitcmd" data-lang=bash><span
+                    class=gp>$ </span> git checkout --theirs _layouts/default.html
+                 <a href="http://gitready.com/advanced/2009/02/25/keep-either-file-in-merge-conflicts.html">More details here: keep-either-file-in-merge-conflicts </a>
+            </code> </pre>
+                            </figure>
+
+
+                        </div>
+                        <div class="row bg-sea txt-black">
+                            <h5>Merging your personal branch into the develop:</h5>
+                            <figure class=highlight>
+          <pre><code class="language-bash gitcmd" data-lang=bash>
+          <span class=gp>$ </span> git checkout develop
+          <span class=gp>$ </span> git fetch origin
+          <span class=gp>$ </span> git pull
+          <span class=gp>$ </span> git rebase origin/[YOUR_BRANCH]
+          <span class=gp>$ </span> git push -f -u origin/develop</code>
+                                </pre>
+                            </figure>
+                        </div>
+
+                        <div class="row bg-sea txt-black">
+                            <h5>Merge your branch and keep all your commits as ONE commit message :</h5>
+                            <figure class=highlight>
+            <pre><code class="language-bash gitcmd" data-lang=bash><span
+                    class=gp>$ </span> git merge --squash [YOUR_BRANCH]</code>
             </pre>
-						</figure>
-					</div>
-				</div>
+                            </figure>
+                        </div>
 
-	<p class="lead">
-		<!--Reset/Revert/ammend a commit in a branch Tips-->
-	<div class="glyphicon-apple">
-		<div class="container">
-			<div class="row alert-warning">
-				<h3>Reset/Revert/Amend a commit in a branch tips</h3>
-				<small>Reset a branch to a specefic commit:</small>
-				<figure class=highlight>
-    <pre><code class=language-bash data-lang=bash>
-    <span class=gp>$ </span> git checkout cc-mitchell-sa-dev-gnd
-    <span class=gp>$ </span> git reset --hard   3c6ecdaaaa169e1a8fd1f0ce6b7ff08fa948fc98
-    <span class=gp>$ </span> git push -f origin cc-mitchell-sa-dev-gnd
-    </code> </pre>
-				</figure>
-			</div>
-
-			<div class="row bg-warning">
-				<h3>Change a commit message afte pushed to server!:</h3>
-				<figure class=highlight>
-            <pre><code class=language-bash data-lang=bash>
-                    <span class=gp>$ </span> git commit --amend -m "New commit message"</code>
-                    <span class=gp>$ </span>  git push -f origin [YourBranchName]</code>
+                        <div class="row bg-sea txt-black">
+                            <h5>Compare and Diff two branches.:</h5>
+                            <figure class=highlight>
+            <pre><code class="language-bash gitcmd" data-lang=bash><span
+                    class=gp>$ </span> git merge --squash [YOUR_BRANCH]</code>
             </pre>
-				</figure>
-			</div>
-		</div>
-	</div>
-	</p>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-	<!--Stash Tips-->
-	<p class="lead">
-	<div class="glyphicon-apple">
-		<div class="container">
-			<div class="row alert-warning">
-				<h3>Stash your changes and switch the branch or pull</h3>
-				<figure class=highlight>
-    <pre><code class=language-bash data-lang=bash>
-    <span class=gp>$ </span> git stash save "name or title"
-    <span class=gp>$ </span> git stash list // list all the stashed
-    <span class=gp>$ </span> git stash pop // or git stash pop stash@{0}
-    </code> </pre>
-				</figure>
-			</div>
-		</div>
-	</div>
-	</p>
+        <!--Reset/Revert/ammend a commit in a branch Tips-->
+        <div class="row bg-skye">
+            <div class="panel panel-default">
+                <div class="panel-heading bg-sea">
+                    <h3>
+                       <span> <img class="imgIcon" src="../images/git/git-cmd.png"/>
+                        Reset/Revert/Amend a commit in a branch tips</span>
+                    </h3>
+                </div>
+                <div class="panel-body bg-sea">
+                    <div class="container">
+                        <div class="row bg-sea txt-black">
+                            <h5>Reset a branch to a specefic commit:</h5>
+                            <figure class=highlight>
+        <pre><code class="language-bash gitcmd" data-lang=bash>
+        <span class=gp>$ </span> git checkout cc-mitchell-sa-dev-gnd
+        <span class=gp>$ </span> git reset --hard   3c6ecdaaaa169e1a8fd1f0ce6b7ff08fa948fc98
+        <span class=gp>$ </span> git push -f origin cc-mitchell-sa-dev-gnd
+        </code> </pre>
+                            </figure>
+                        </div>
+                        <div class="row bg-sea txt-black">
+                            <h5>Change a commit message afte pushed to server!:</h5>
+                            <figure class=highlight><pre><code class="language-bash gitcmd" data-lang=bash>
+        <span class=gp>$ </span> git commit --amend -m "New commit message"</code>
+        <span class=gp>$ </span>  git push -f origin [YourBranchName]</code></pre>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-	<!--Squash Tips-->
-	<p class="lead">
-	<div class="bg-info">
-		<div class="glyphicon-apple">
-			<div class="container">
-				<div class="row alert-warning">
-					<h3>Squash your latests commits into one:</h3>
-					This is a great way to group certain changes together before sharing them with others. ~ Here’s how
-					to squash some commits into one. Let’s say this is your current git log:
-					<a href="../images/git-tip/git-log-5.png" target="_blank">
-						<img src="../images/git-tip/git-log-5.png"></a>
-					<br/>
-					<br/>
-					Now, you want to squash your last three commits in one to make your history look pretty. The
-					command to
-					accomplish that is:
-					<figure class=highlight>
-                            <pre><code class=language-bash data-lang=bash>
-                                <span class=gp>$ </span>git rebase -i HEAD~3
+
+        <!--Stash Tips-->
+        <div class="row bg-skye">
+            <div class="panel panel-default">
+                <div class="panel-heading bg-sea">
+                    <h3>
+                       <span> <img class="imgIcon" src="../images/git/github.png"/>
+                        Stash tips</span>
+                    </h3>
+                </div>
+                <div class="panel-body bg-sea">
+                    <div class="container">
+                        <div class="row bg-sea txt-black">
+                            <h5>Stash your changes and switch the branch or pull:</h5>
+                            <figure class=highlight>
+        <pre><code class="language-bash gitcmd" data-lang=bash>
+        <span class=gp>$ </span> git stash save "name or title"
+        <span class=gp>$ </span> git stash list // list all the stashed
+        <span class=gp>$ </span> git stash pop // or git stash pop stash@{0}
+        </code> </pre>
+                            </figure>
+                        </div>
+                        <div class="row bg-sea txt-black">
+                            <h5>Change a commit message afte pushed to server!:</h5>
+                            <figure class=highlight><pre><code class="language-bash gitcmd" data-lang=bash>
+        <span class=gp>$ </span> git commit --amend -m "New commit message"</code>
+        <span class=gp>$ </span>  git push -f origin [YourBranchName]</code></pre>
+                            </figure>
+                        </div>
+
+                        <div class="row bg-sea txt-black">
+                            <br/><br/>
+                            <p class="lead bg-skye"><b>Squash your latests commits into one:</b></p>
+                            <h6>
+                                This is a great way to group certain changes together before sharing them with others.
+                                <br/><br/>~Here’s how to squash some commits into one. Let’s say this is your current
+                                git log:<br/><br/><br/><br/>
+                                <a href="../images/git-tip/git-log-5.png" target="_blank">
+                                    <img src="../images/git-tip/git-log-5.png"></a>
+                                <br/><br/><br/><br/>
+                                Now, you want to squash your last three commits in one to make your history look
+                                pretty.The command to accomplish that is:</h6><br/><br/>
+                            <figure class=highlight>
+                            <pre><code class="language-bash gitcmd" data-lang=bash>
+        <span class=gp>$ </span>git rebase -i HEAD~3
                             </code> </pre>
-					</figure>
+                            </figure>
 
-					<small>This will open up your editor with the following:</small>
-					<br/>
-					<a href="../images/git-tip/gitrebase.png" target="_blank">
-						<img src="../images/git-tip/gitrebase.png"></a>
-					<br/>
-					<br/>
-					<small>Change all pick in beggingin of all commist to Squash except that one that you want to be the presenter or You can change the message!</small>
-					<br/>
-					<a href="../images/git-tip/ChangCommitMessageInSquash.png" target="_blank">
-						<img src="../images/git-tip/ChangCommitMessageInSquash.png"></a>
-					<br/>
-					<br/>
-					<small>Press Escape and ":wq" and perss Enter.</small>
-					<small>It will show a simliar page with commit messages, put a custom message and continue...</small>
-					<small>Run a git log -3 : You will see your commit changes and consider as one commit.</small>
-					<figure class=highlight>
-                            <pre><code class=language-bash data-lang=bash>
-                                <span class=gp>$ </span>git log -3
+                            <h6>This will open up your editor with the following:</h6>
+                            <br/>
+                            <a href="../images/git-tip/gitrebase.png" target="_blank">
+                                <img src="../images/git-tip/gitrebase.png"></a>
+                            <br/>
+                            <br/>
+                            <h6>Change all pick in beggingin of all commist to Squash except that one that you want to
+                                be the presenter or You can change the message!</h6>
+                            <br/>
+                            <a href="../images/git-tip/ChangCommitMessageInSquash.png" target="_blank">
+                                <img src="../images/git-tip/ChangCommitMessageInSquash.png"></a>
+                            <br/>
+                            <br/>
+                            <h5>Press Escape and ":wq" and perss Enter.<br/>
+                                It will show a simliar page with commit messages, put a custom message and
+                                continue...<br/>
+
+                                Run a git log -3 : You will see your commit changes and consider as one commit.<br/>
+                            </h5>
+                            <figure class=highlight>
+                            <pre><code class="language-bash gitcmd" data-lang=bash>
+        <span class=gp>$ </span>git log -3
                             </code> </pre>
-					</figure>
-					<small class="bg-warning">You need to push to server for !</small>
-					<figure class=highlight>
-                            <pre><code class=language-bash data-lang=bash>
-                                <span class=gp>$ </span>git push -u origin master
+                            </figure>
+                            <h5 class="bg-warning">Don't forgot that at end You need to push it to git server!</h5>
+                            <figure class=highlight>
+                            <pre><code class="language-bash gitcmd" data-lang=bash>
+        <span class=gp>$ </span>git push -u origin master
                             </code> </pre>
-					</figure>
+                            </figure>
+                        </div>
 
-				</div>
-				<!--Other Git Useful Tricks-->
 
-				<div class="row alert-success">
-					<h3>Other Useful Git Tricks</h3>
-					<small>Difference between two commit as a .patch file:</small>
-					<figure class=highlight>
-                        <pre><code class=language-bash data-lang=bash>
-                        <span class=gp>$ </span> git diff e71516d12e818e1676db6854e11a8bbcabd54ca2 f0e2dfbf64f28011a06d89cb500f988ad3d96f0a > ~/dif_file_result.patch
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Other Git Useful Tricks-->
+        <div class="row bg-skye">
+            <div class="panel panel-default">
+                <div class="panel-heading bg-sea">
+                    <h3>
+                       <span> <img class="imgIcon" src="../images/git/git-cmd3.png"/>
+                        Other Useful Git Tricks</span>
+                    </h3>
+                </div>
+                <div class="panel-heading bg-sea">
+
+                    <div class="row bg-sea txt-black">
+                        <h5>Difference between two commit as a .patch file:</h5>
+                        <figure class=highlight>
+                        <pre><code class="language-bash gitcmd" data-lang=bash>
+            <span class=gp>$ </span> git diff e71516d12e818e1676db6854e11a8bbcabd54ca2 f0e2dfbf64f28011a06d89cb500f988ad3d96f0a > ~/dif_file_result.patch
                         </code> </pre>
-					</figure>
-					<small>Apply Patch created by Git:</small>
-					<figure class=highlight>
-                        <pre><code class=language-bash data-lang=bash>
-                        <span class=gp>$ </span>   git apply ~/dif_file_result.patch
+                        </figure>
+                        <h5>Apply Patch created by Git:</h5>
+                        <figure class=highlight>
+                        <pre><code class="language-bash gitcmd" data-lang=bash>
+            <span class=gp>$ </span>   git apply ~/dif_file_result.patch
                         </code> </pre>
-					</figure>
-					<small>Apply Patch created by Git:</small>
-					<figure class=highlight>
-                        <pre><code class=language-bash data-lang=bash>
-                        <span class=gp>$ </span>   git stash show -p stash@{0} > ~/updateUserController.patch
+                        </figure>
+                    </div>
+                    <div class="row bg-sea txt-black">
+                        <h5>Create Patch from stashed contex:</h5>
+                        <figure class=highlight>
+                        <pre><code class="language-bash gitcmd" data-lang=bash>
+            <span class=gp>$ </span>   git stash show -p stash@{0} > ~/updateUserController.patch
                         </code> </pre>
-					</figure>
-				</div>
-			</div>
-		</div>
-	</div>
-	</p>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
 </div>
+<br/><br/>
+
+<!--start-social-section-->
+
+<!--start-social-section-->
+<footer class=footer>
+    <div class='animated container'>
+        <img src="../images/logos/logo-s.svg" class=footer-logo>
+        <ul class='text-center footer-social' id="contact">
+            <p><b><h3>Contact Me</h3></b></p>
+            <br/>
+            <h6><b>It would be great to hear from you!</b></h6>
+            <br/><br/>
+            <li>
+                <a href="mailto:naderi.ghodrat@gmail.com" target="_blank"><img src="../images/social/email.png" border="10" alt="Email"></a>&nbsp;&nbsp;
+            </li>
+            <li><a href="skype:naderi.ghodrat?call"><img src="../images/social/skype.png" border="10" alt="Email"></a>&nbsp;&nbsp;
+            </li>
+            <li>
+                <a href="https://ie.linkedin.com/in/naderighodrat" id="linkedIn" target="_blank"><img src="../images/social/linkedIn.png" border="10" alt="LinkedIn"></a>&nbsp;&nbsp;
+            </li>
+            <li>
+                <a href="https://github.com/naderighodrat" target="_blank"><img src="../images/social/github.png" border="10" alt="GitHub"></a>&nbsp;&nbsp;
+            </li>
+            <li>
+                <a href="https://www.facebook.com/naderi.ghodrat" target="_blank"><img src="../images/social/facebook.png" border="10" alt="Facebook"></a>&nbsp;&nbsp;
+            </li>
+            <li>
+                <a href="https://twitter.com/naderighodrat" target="_blank"><img src="../images/social/twitter.png" border="10" alt="Twitter"></a>&nbsp;&nbsp;
+            </li>
+            <li><a href="#" target="_blank"><img src="../images/social/instagrams.png" border="10" alt="Instagram"></a>&nbsp;&nbsp;
+            </li>
+
+        </ul>
+
+        <div class='bottom-menu-align'>
+            <div class='col-sm-6 col-md-3  footer-link-holder'>
+            </div>
+            <div class='col-sm-6 col-md-3  footer-link-holder'>
+                <h3 class=footer-link-title> Services</h3>
+                <ul class='animated footer-links'>
+                    <li class='menu-top'><a href="../pages/cv.html">CV</a></li>
+                    <li class='menu-top'><a href="../pages/git.html">Git</a></li>
+                    <li class='menu-top'><a href="www.gnaderi.com">gnaderi.com</a></li>
+                </ul>
+                <br/> <br/>
+            </div>
+
+            <div class='col-sm-6 col-md-3  footer-link-holder'>
+                <h3 class=footer-link-title> Company</h3>
+                <ul class='animated footer-links'>
+                    <li class='menu-top'><a href="#">Blog</a></li>
+                    <li class='menu-top'><a href="#">About</a></li>
+                    <li class='menu-top'><a href="#">Team</a></li>
+                    <br/> <br/>
+
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <div class="copy-right">
+        <div class="container">
+            <div class="footer-top">
+                <p class="lead"><h5>&copy; 2016 <span></span> All rights reserved | Design by
+                <a href="https://ie.linkedin.com/in/naderighodrat"> Ghodrat Naderi</a></h5></p>
+            </div>
+            <script type="text/javascript">
+                $(document).ready(function () {
+                    /*
+                     var defaults = {
+                     containerID: 'toTop', // fading element id
+                     containerHoverID: 'toTopHover', // fading element hover id
+                     scrollSpeed: 1200,
+                     easingType: 'linear'
+                     };
+                     */
+
+                    $().UItoTop({easingType: 'easeOutQuart'});
+
+                });
+            </script>
+            <a href="#" id="toTop" style="	display: block;"> <span id="toTopHover" style='opacity: 10;'> </span></a>
+        </div>
+    </div>
+    <!--end-copy-right-->
+</footer>
+
+
+
 </body>
 </html>

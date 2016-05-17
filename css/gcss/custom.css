@@ -207,12 +207,14 @@ img {
     margin-top: 2.5em;
     padding-top: inherit;
 }
+
 .txt-black-center h5 {
     color: #000000;
     text-align: center;
     margin-top: 2.5em;
     padding-top: inherit;
 }
+
 .btn.btn-gnd :hover, .btn.btn-gnd:focus {
     background-color: #548;
     color: #fff;
@@ -434,4 +436,25 @@ ul.nav a:hover {
     -webkit-border-radius: 500px;
     -moz-border-radius: 500px;
     border: 1px solid #761d51;
+}
+
+.imgIcon {
+    width: 5%;
+    height: 5%;
+}
+
+.gitIcon {
+    width: 50%;
+    height: 50%;
+}
+
+.titleIcon {
+    width: 20%;
+    height: 20%;
+}
+.gitcmd {
+    padding-left: 75px;
+    color: #000000;
+    font-size: inherit;
+    text-align: left;
 }
