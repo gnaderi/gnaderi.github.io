@@ -1,295 +1,331 @@
 <!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/html">
 <http-equivad>
-	<title>Welcome To The Personal Blog of Ghodrat Naderi</title>
-	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
-	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
-	<link href="css/bootstrap-theme.css" rel="stylesheet" type="text/css" media="all">
-	<link href="css/gcss/custom.css" rel="stylesheet" type="text/css" media="all"/>
+    <title>Welcome To The Personal Blog of Ghodrat Naderi</title>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
+    <link href="css/bootstrap-theme.css" rel="stylesheet" type="text/css" media="all">
+    <link href="css/gcss/custom.css" rel="stylesheet" type="text/css" media="all"/>
 
-	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-	<link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-	<meta name="keywords" content="My Skills Responsive web template, Bootstrap Web Templates,"/>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<script src="js/jquery.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="keywords" content="My Skills Responsive web template, Bootstrap Web Templates,"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 
-	<script type="application/x-javascript"> addEventListener("load", function () {
-		setTimeout(hideURLbar, 0);
-	}, false);
-	function hideURLbar() {
-		window.scrollTo(0, 1);
-	} </script>
-	<!---- start-smoth-scrolling---->
-	<script type="text/javascript" src="js/move-top.js"></script>
-	<script type="text/javascript" src="js/easing.js"></script>
-	<script type="text/javascript">
-		jQuery(document).ready(function ($) {
-			$(".scroll").click(function (event) {
-				event.preventDefault();
-				$('html,body').animate({scrollTop: $(this.hash).offset().top}, 1200);
-			});
-		});
-	</script>
-	<!---End-smoth-scrolling---->
+    <script type="application/x-javascript"> addEventListener("load", function () {
+        setTimeout(hideURLbar, 0);
+    }, false);
+    function hideURLbar() {
+        window.scrollTo(0, 1);
+    } </script>
+    <!---- start-smoth-scrolling---->
+    <script type="text/javascript" src="js/move-top.js"></script>
+    <script type="text/javascript" src="js/easing.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+            $(".scroll").click(function (event) {
+                event.preventDefault();
+                $('html,body').animate({scrollTop: $(this.hash).offset().top}, 1200);
+            });
+        });
+    </script>
+    <!---End-smoth-scrolling---->
 
 </http-equivad>
 <body class="fbody" data-offset=90 data-spy=scroll">
 <header>
-	<nav class='navbar navbar-fixed-top navbar-default' role=navigation>
-		<div class=container>
-			<div class=navbar-header>
-				<button class=navbar-toggle data-toggle=collapse type=button><span
-						class=sr-only> Toggle Navigation </span> <span class=icon-bar></span> <span
-						class=icon-bar></span> <span class=icon-bar></span></button>
-				<a class='navbar-brand animated' href='index.html'>
-					<img src="images/logos/logo-s.svg" class="nav-logo"></a>
-			</div>
-			<div class="collapse navbar-collapse">
-				<ul class='nav navbar-nav animated'>
-					<li class=" menu active"><a href="index.html">Home</a></li>
-					<li class="menu"><a href="pages/cv.html">CV</a></li>
-					<li class="menu"><a href="pages/git.html">Git</a></li>
-					<li class="menu"><a href="#">Blog</a></li>
-					<li>
-						<form class="navbar-form navbar-left" action="https://www.google.com/search?g=">
-							<div class="form-group">
-								<input type="text" class="form-control" placeholder="Search">
-							</div>
-							<button type="submit" class="btn-search">Search</button>
-						</form>
-					</li>
-					<li class="menu"><a href="#">Login</a></li>
-					<li><br/></li>
+    <nav class='navbar navbar-fixed-top navbar-default' role=navigation>
+        <div class=container>
+            <div class=navbar-header>
+                <button class=navbar-toggle data-toggle=collapse type=button><span
+                        class=sr-only> Toggle Navigation </span> <span class=icon-bar></span> <span
+                        class=icon-bar></span> <span class=icon-bar></span></button>
+                <a class='navbar-brand animated' href='index.html'>
+                    <img src="images/logos/logo-s.svg" class="nav-logo"></a>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class='nav navbar-nav animated'>
+                    <li class=" menu active"><a href="index.html">Home</a></li>
+                    <li class="menu"><a href="pages/cv.html">CV</a></li>
+                    <li class="menu"><a href="pages/git.html">Git</a></li>
+                    <li class="menu"><a href="#">Blog</a></li>
+                    <!--    <li>
+                            <form class="navbar-form navbar-left" action="https://www.google.com/search?g=">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Search">
+                                </div>
+                                <button type="submit" class="btn-search">Search</button>
+                            </form>
+                        </li>-->
+                    <li>
+                        <div class="navbar-form navbar-left">
+                            <form ng-submit="vm.search()">
+                                <input class="search-box" ng-model="vm.searchText" placeholder=" Search">
+                                <button class="search-button" ng-click="vm.search()">&nbsp;</button>
+                            </form>
+                        </div>
+                    </li>
+                    <li class="menu"><a href="#">Login</a></li>
+                    <li><br/></li>
 
-				</ul>
-			</div>
-		</div>
-	</nav>
+                </ul>
+            </div>
+        </div>
+    </nav>
 </header>
 
 
 <div class='row animated  intro'>
-	<div class='col-md-2 hidden-sm hidden-xs'>
-		<br>
-	</div>
-	<div class='col-md-3 hidden-sm hidden-xs'>
-		<br>
-	</div>
-	<div class='col-md-6 hidden-sm hidden-xs'>
-		<br> <br><br> <br>
-		<h1>Hello..<span class="exclamation">!</span></h1>
-		<ul>
-			<li>My name is Ghodrat Naderi</li>
-			<li> I am a Software Developer</li>
-			<li> I am from Iran and living in Dublin, Ireland.</li>
-			<li> I enjoy helping others to reach their goals. Reach out if I can help in any way.</li>
-			<a href="#contact" class="scroll top"><span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span></a>
-			<br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
-			<br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
-		</ul>
-	</div>
+    <div class='col-md-2 hidden-sm hidden-xs'>
+        <br>
+    </div>
+    <div class='col-md-3 hidden-sm hidden-xs'>
+        <br>
+    </div>
+    <div class='col-md-6 hidden-sm hidden-xs about'>
+        <h1>A little about me...<span class="exclamation">!</span></h1>
+        <ul>
+            <li>My name is Ghodrat</li>
+            <li> I am a Software Developer</li>
+            <li> I am from Iran and living in Dublin, Ireland.</li>
+            <li> I enjoy helping others to reach their goals. Reach out if I can help in any way.</li>
+            <br/>
+            <p>
+                My main hobbies/interests in life are traveling, coding, and gaming. second subject also happen to be my
+                main sources of income. I seem to have a habit of turning my personal hobbies into business, which is
+                great because I get to make a living doing the things I love.
+            </p>
+            <br/>
+            <p>
+                Beyond life on the Internet I live with my lovely wife. I enjoy taking videos/photo
+                of exciting events, so if you want to join me on life’s adventures be sure to <a href="#">subscribe</a>.
+            </p>
+            <a href="#contact" class="scroll top">
+                <span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true">
 
-	<div class='col-md-1 hidden-sm hidden-xs'>
-		<br>
-		<a href="#contact" class="scroll top"><img class="img-responsive pack-fox" src="images/logos/logo.svg"/></a>
-	</div>
+                </span>
+            </a>
+        </ul>
+    </div>
+
+    <div class='col-md-1 hidden-sm hidden-xs'>
+        <br>
+        <a href="#contact" class="scroll top"><img class="img-responsive pack-fox" src="images/logos/logo.svg"/></a>
+    </div>
 </div>
 <!--end header-section-->
 
 
 <!--start-experience-section-->
 <div class="experience-section">
-	<div class="row">
-		<div class="col-md-2">
-			<br/>
-		</div>
-		<div class="col-md-5">
-			<h3><img src="images/education.png" width="10%" height="10%"> Educations..<span class="exclamation">!</span>
-			</h3>
-			<div class="experience">
-				<label>M.Sc. Computer Science</label> (2009-20011)<a href="http://www.usb.ac.ir"> University of Sistan and Baluchestan</a>
-			</div>
-			<div class="experience">
-				<label>B.S Software Eng'</label>(2006-2008)<a href="http://shamsipour.tvu.ac.ir/"> Shamsipour Technical Faculty</a>
-			</div>
-			<div class="experience">
-				<label>Associate Degree, Software Eng'</label>(2003-2005)<a href="http://en.vru.ac.ir/"> Vali-e-Asr University of Rafsanjan</a>
-			</div>
-		</div>
+    <div class="row">
+        <div class="col-md-2">
+            <br/>
+        </div>
+        <div class="col-md-5">
+            <h3><img src="images/education.png" width="10%" height="10%"> Educations..<span class="exclamation">!</span>
+            </h3>
+            <div class="experience">
+                <label>M.Sc. Computer Science</label> (2009-20011)<a href="http://www.usb.ac.ir"> University of Sistan
+                and Baluchestan</a>
+            </div>
+            <div class="experience">
+                <label>B.S Software Eng'</label>(2006-2008)<a href="http://shamsipour.tvu.ac.ir/"> Shamsipour Technical
+                Faculty</a>
+            </div>
+            <div class="experience">
+                <label>Associate Degree, Software Eng'</label>(2003-2005)<a href="http://en.vru.ac.ir/"> Vali-e-Asr
+                University of
+                Rafsanjan</a>
+            </div>
+        </div>
 
-		<div class="col-md-1">
-			<br/>
-		</div>
-		<div class="col-md-5">
-			<h3>
-				<img src="images/workhistory.png" width="10%" height="10%"> Career History...<span class="exclamation">!</span>
-																			<!--<img class="workavatar" src="images/workhistory.svg" width="10%" height="10%"> Career History...<span class="exclamation">!</span>-->
-			</h3>
-			<div class="experience">
-				<a href="https://www.Guidewire.com" target="_blank"> Guidewire Software Inc, Dublin,IE
-					<label>Software Engineer (Apr 2015 - Present)</label></a>
-			</div>
-			<div class="experience">
-				<a href="https://www.pilz.com" target="_blank">Pilz, Cork, IE</a><label>Senior Java Engineer (Oct 2013 – Mar 2015 )</label>
-			</div>
-			<div class="experience">
-				<a href="https://www.mobile-technologies.com" target="_blank">Mobile-Technologies, BKK, Thailand</a>
-				<label> Senior Java Developer(Feb–Oct 2013)</label>
-			</div>
-			<div class="experience">
-				<a href="http://www.mobinone.org/" target="_blank">Mobin One Kish, Tehran, Iran</a><label> Senior Java Developer
-																										   ( Oct 2011 - Oct 2012)</label>
-			</div>
-			<div class="experience">
-				<a href="http://www.caspco.com" target="_blank">CASPian Co, Tehran, Iran</a><label> Developer( Apr 2011 - Oct 2011 )</label>
-			</div>
-			<div class="experience">
-				<a href="http://www.douran.com" target="_blank">Douran Data Processing Co, Tehran, Iran</a><label>Developer ( Aug 2010 - Apr 2011 )</label>
-			</div>
-			<div class="experience">
-				<a href="http://www.dezab.com" target="_blank">Dezab Co, Ahwaz, Iran</a><label>Developer ( Jan2008 - Oct 2009)</label>
-			</div>
-			<div class="experience">
-				<a href="http://www.izehiau.ac.ir" target="_blank">Azad University, Izeh, Iran </a><label>TeacherAssistance Sep 2007 - Aug 2009 (Part Time) </label>
-			</div>
-		</div>
-	</div>
+        <div class="col-md-1">
+            <br/>
+        </div>
+        <div class="col-md-5">
+            <h3>
+                <img src="images/workhistory.svg" width="10%" height="10%"> Career History...<span
+                    class="exclamation">!</span>
+                <!--<img class="workavatar" src="images/workhistory.svg" width="10%" height="10%"> Career History...<span class="exclamation">!</span>-->
+            </h3>
+            <div class="experience">
+                <a href="https://www.Guidewire.com" target="_blank"> Guidewire Software Inc, Dublin,IE
+                    <label>Software Engineer (Apr 2015 - Present)</label></a>
+            </div>
+            <div class="experience">
+                <a href="https://www.pilz.com" target="_blank">Pilz, Cork, IE</a><label>Senior Java Engineer (Oct 2013 –
+                Mar 2015 )</label>
+            </div>
+            <div class="experience">
+                <a href="https://www.mobile-technologies.com" target="_blank">Mobile-Technologies, BKK, Thailand</a>
+                <label> Senior Java Developer(Feb–Oct 2013)</label>
+            </div>
+            <div class="experience">
+                <a href="http://www.mobinone.org/" target="_blank">Mobin One Kish, Tehran, Iran</a><label> Senior Java
+                Developer
+                ( Oct 2011 -
+                Oct
+                2012)</label>
+            </div>
+            <div class="experience">
+                <a href="http://www.caspco.com" target="_blank">CASPian Co, Tehran, Iran</a><label> Developer( Apr 2011
+                - Oct 2011 )</label>
+            </div>
+            <div class="experience">
+                <a href="http://www.douran.com" target="_blank">Douran Data Processing Co, Tehran, Iran</a><label>Developer
+                ( Aug
+                2010 -
+                Apr
+                2011
+                )</label>
+            </div>
+            <div class="experience">
+                <a href="http://www.dezab.com" target="_blank">Dezab Co, Ahwaz, Iran</a><label>Developer ( Jan2008 - Oct
+                2009)</label>
+            </div>
+            <div class="experience">
+                <a href="http://www.izehiau.ac.ir" target="_blank">Azad University, Izeh, Iran </a><label>TeacherAssistance
+                Sep 2007 - Aug
+                2009 (Part
+                Time) </label>
+            </div>
+        </div>
+    </div>
 </div>
 <!--end experience-section-->
 <!--Skills-->
 <div class="container bg-grey">
-	<h3 class="panel-heading bg-sea txt-black"><span class="glyphicon glyphicon-wrench"></span>Technical Skills</h3>
-	<div class="jumbotron bg-skye">
-		<div class="row">
-			<div class="col-lg-12">
-				<div class="panel panel-default">
-					<div class="panel-heading bg-sea text-center bg-sea">
-						<div class="panel-title">Java Technologies</div>
-					</div>
-					<div class="panel-body bg-sea text-center">
-						<button class="btn btn-skill">Core Java</button>
-						<button class="btn btn-skill">Andriod SDK</button>
-						<button class="btn btn-skill">JPA,Hibernate, JDBC</button>
-						<button class="btn btn-skill">Servlet, JSP, JSF</button>
-						<button class="btn btn-skill">Spring 3</button>
-						<button class="btn btn-skill">Swing, SWT</button>
-						<button class="btn btn-skill">JMS, Quartz</button>
-						<button class="btn btn-skill">JSON, XML, XSD</button>
-						<button class="btn btn-skill">Web Services</button>
-						<button class="btn btn-skill">Maven, Gradle</button>
-						<button class="btn btn-skill">JUnit, Google Tester</button>
-					</div>
-				</div>
-			</div>
+    <h3 class="panel-heading bg-sea txt-black"><span class="glyphicon glyphicon-wrench"></span>Technical Skills</h3>
+    <div class="jumbotron bg-skye">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading bg-sea text-center bg-sea">
+                        <div class="panel-title">Java Technologies</div>
+                    </div>
+                    <div class="panel-body bg-sea text-center">
+                        <button class="btn btn-skill">Core Java</button>
+                        <button class="btn btn-skill">Andriod SDK</button>
+                        <button class="btn btn-skill">JPA,Hibernate, JDBC</button>
+                        <button class="btn btn-skill">Servlet, JSP, JSF</button>
+                        <button class="btn btn-skill">Spring 3</button>
+                        <button class="btn btn-skill">Swing, SWT</button>
+                        <button class="btn btn-skill">JMS, Quartz</button>
+                        <button class="btn btn-skill">JSON, XML, XSD</button>
+                        <button class="btn btn-skill">Web Services</button>
+                        <button class="btn btn-skill">Maven, Gradle</button>
+                        <button class="btn btn-skill">JUnit, Google Tester</button>
+                    </div>
+                </div>
+            </div>
 
-			<div class="col-lg-6">
-				<div class="panel panel-default bg-sea">
-					<div class="panel-heading text-center bg-sea">
-						<div class="panel-title">Web Technologies</div>
-					</div>
-					<div class="panel-body text-center bg-sea">
-						<button class="btn btn-skill">RichFaces 3</button>
-						<button class="btn btn-skill">JSP</button>
-						<button class="btn btn-skill">JQuery</button>
-						<button class="btn btn-skill">Java Script</button>
-						<button class="btn btn-skill">Html</button>
-					</div>
-				</div>
-			</div>
+            <div class="col-lg-6">
+                <div class="panel panel-default bg-sea">
+                    <div class="panel-heading text-center bg-sea">
+                        <div class="panel-title">Web Technologies</div>
+                    </div>
+                    <div class="panel-body text-center bg-sea">
+                        <button class="btn btn-skill">RichFaces 3</button>
+                        <button class="btn btn-skill">JSP</button>
+                        <button class="btn btn-skill">JQuery</button>
+                        <button class="btn btn-skill">Java Script</button>
+                        <button class="btn btn-skill">Html</button>
+                    </div>
+                </div>
+            </div>
 
-			<div class="col-lg-6">
-				<div class="panel panel-default">
-					<div class="panel-heading text-center bg-sea">
-						<div class="panel-title">Design Patterns</div>
-					</div>
-					<div class="panel-body text-center  bg-sea">
-						<button class="btn btn-skill">Singleton</button>
-						<button class="btn btn-skill">Factory</button>
-						<button class="btn btn-skill">Bridge</button>
-						<button class="btn btn-skill">Proxy</button>
-						<button class="btn btn-skill">Command</button>
-						<button class="btn btn-skill">Decorator</button>
-						<button class="btn btn-skill">Visitor</button>
-						<button class="btn btn-skill">Adapter</button>
-					</div>
-				</div>
-			</div>
+            <div class="col-lg-6">
+                <div class="panel panel-default">
+                    <div class="panel-heading text-center bg-sea">
+                        <div class="panel-title">Design Patterns</div>
+                    </div>
+                    <div class="panel-body text-center  bg-sea">
+                        <button class="btn btn-skill">Singleton</button>
+                        <button class="btn btn-skill">Factory</button>
+                        <button class="btn btn-skill">Bridge</button>
+                        <button class="btn btn-skill">Proxy</button>
+                        <button class="btn btn-skill">Command</button>
+                        <button class="btn btn-skill">Decorator</button>
+                        <button class="btn btn-skill">Visitor</button>
+                        <button class="btn btn-skill">Adapter</button>
+                    </div>
+                </div>
+            </div>
 
-			<div class="col-lg-6">
-				<div class="panel panel-default">
-					<div class="panel-heading text-center">
-						<div class="panel-title">OS</div>
-					</div>
-					<div class="panel-body text-center bg-sea">
-						<button class="btn btn-skill">Fedora</button>
-						<button class="btn btn-skill">RHEL</button>
-						<button class="btn btn-skill">Mac OS X</button>
-					</div>
-				</div>
-			</div>
+            <div class="col-lg-6">
+                <div class="panel panel-default">
+                    <div class="panel-heading text-center">
+                        <div class="panel-title">OS</div>
+                    </div>
+                    <div class="panel-body text-center bg-sea">
+                        <button class="btn btn-skill">Fedora</button>
+                        <button class="btn btn-skill">RHEL</button>
+                        <button class="btn btn-skill">Mac OS X</button>
+                    </div>
+                </div>
+            </div>
 
-			<div class="col-lg-6">
-				<div class="panel panel-default">
-					<div class="panel-heading text-center">
-						<div class="panel-title">RDBMS</div>
-					</div>
-					<div class="panel-body text-center bg-sea">
-						<button class="btn btn-skill">MySQL 5</button>
-						<button class="btn btn-skill">Oracle 11g</button>
-					</div>
-				</div>
-			</div>
+            <div class="col-lg-6">
+                <div class="panel panel-default">
+                    <div class="panel-heading text-center">
+                        <div class="panel-title">RDBMS</div>
+                    </div>
+                    <div class="panel-body text-center bg-sea">
+                        <button class="btn btn-skill">MySQL 5</button>
+                        <button class="btn btn-skill">Oracle 11g</button>
+                    </div>
+                </div>
+            </div>
 
-			<div class="col-lg-12">
-				<div class="panel panel-default">
-					<div class="panel-heading text-center">
-						<div class="panel-title">Other Programming Languages, Tools, Technologies</div>
-					</div>
-					<div class="panel-body text-center bg-sea">
-						<button class="btn btn-skill">OOP & OOD</button>
-						<button class="btn btn-skill">C/C++, C#</button>
-						<button class="btn btn-skill">Andriod</button>
-						<button class="btn btn-skill">Matlab</button>
-						<button class="btn btn-skill">GOSU(Guidewire Company Langauge)</button>
-						<button class="btn btn-skill">Git, Svn</button>
-						<button class="btn btn-skill">Apache Tomcat, Jboss</button>
-						<button class="btn btn-skill">UML, Agile, Scrum</button>
-						<button class="btn btn-skill">Artificial Intelligence</button>
-					</div>
-				</div>
-			</div>
+            <div class="col-lg-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading text-center">
+                        <div class="panel-title">Other Programming Languages, Tools, Technologies</div>
+                    </div>
+                    <div class="panel-body text-center bg-sea">
+                        <button class="btn btn-skill">OOP & OOD</button>
+                        <button class="btn btn-skill">C/C++, C#</button>
+                        <button class="btn btn-skill">Andriod</button>
+                        <button class="btn btn-skill">Matlab</button>
+                        <button class="btn btn-skill">GOSU(Guidewire Company Langauge)</button>
+                        <button class="btn btn-skill">Git, Svn</button>
+                        <button class="btn btn-skill">Apache Tomcat, Jboss</button>
+                        <button class="btn btn-skill">UML, Agile, Scrum</button>
+                        <button class="btn btn-skill">Artificial Intelligence</button>
+                    </div>
+                </div>
+            </div>
 
-		</div>
-	</div>
+        </div>
+    </div>
 </div>
 <br/>
 <br/>
 <br/>
 <!--Certificate Section-->
-<div class="container-fluid text-center bg-skye">
-
-	<h1 class="text-center txt-black">My Certificates </h1>
-	<div class="row">
-		<div class="col-lg-6">
-			<a href="images/CSM_Certificate.png" target="_blank">
-				<img src="images/CSM_Certificate.png" width="50%" height="50%">
-				<h5 class="text-center txt-black">Certified ScrumMaster<span>®</span></h5></a>
-		</div>
-		<div class="col-lg-6">
-			<a href="images/Lawroom.png" target="_blank">
-				<img src="images/Lawroom.png" width="45%" height="45%">
-				<h5 class="text-center txt-black">Information Security & Privacy</h5></a>
-		</div>
-	</div>
-	<br/>
-	<br/>
-	<br/>
-	<br/>
-	<br/>
-	<br/>
+<div class=" row bg-cert text-center txt-black">
+    <h1 class=" txt-black">My Certificates </h1>
+    <div class="col-sm-6">
+        <a href="pdf/CSM_Certificate.pdf" target="_blank">
+            <img src="images/CSM_Certificate.png" width="50%" height="50%">
+            <h5 class="txt-black">Certified ScrumMaster<span>®</span></h5></a>
+    </div>
+    <div class="col-sm-6">
+        <a href="pdf/LawRoom_Certificate.pdf" target="_blank">
+            <img src="images/Lawroom.png" width="45%" height="45%">
+            <h5 class="txt-black">Information Security & Privacy</h5></a>
+    </div>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
 </div>
 
 <!--End of Skills-->
@@ -300,147 +336,157 @@
 
 <!--Project that I am working on it-->
 <div class="container bg-grey">
-	<h3 class="panel-heading bg-sea txt-black"><span class="glyphicon glyphicon-paperclip"></span> Projects I Completed
-	</h3>
-	<div class="jumbotron bg-skye">
-		<div class="row bg-skye">
-			<div class="panel panel-default">
-				<div class="panel-heading bg-sea">
-					<h4>Guidewire ClaimCenter
-						<small>vs</small>
-						Mitchell SmartAdvisor Integration
-					</h4>
-				</div>
-				<div class="panel-body bg-sea">
-					<div class="col-lg-4">
-						<a href="https://www.guidewire.com" target="_blank"><img src="https://www.guidewire.com/sites/all/themes/guidewire/images/logos/guidewire_logo.svg" class="img-thumbnail bg-sea"/></a>
-					</div>
-					<div class="col-lg-8 bg-sea txt-black">
-						<h3 class="">Implemented CC-CEP integration -
-							<button class="btn btn-lg btn-skill">Single Sign-On</button>
-									 Using
-							<button class="btn btn-lg btn-skill">JAVA</button>
-									 &
-							<button class="btn btn-lg btn-skill">GOSU</button>
-									 Based On
-							<button class="btn btn-lg btn-skill">SAML2</button>
-						</h3>
-						<div align="justify">CC-CEP integration is an important integration between Guidewire
-											 ClaimCenter suite and Mitchell SmartAdvisor for send/receive working Personal Auto and
-											 Worker's Compensation Claim.<br/>
-											 The key of this integration to have access to bill level details directly from Guidewire
-											 ClaimCenter without login to CEP and approve/deny bills hold it by
-							<strong>SSO(Single Sign-On)</strong>.
-						</div>
-						<a class="pull-right btn btn-gnd" target="_blank"
-						   href="https://mitchell.guidewire.com/wiki/display/MISA/CC-CEP+integration+-+Single+Sign-On">Visit Project</a>
-					</div>
-				</div>
-			</div>
-		</div>
+    <h3 class="panel-heading bg-sea txt-black"><span class="glyphicon glyphicon-paperclip"></span> Projects I Completed
+    </h3>
+    <div class="jumbotron bg-skye">
+        <div class="row bg-skye">
+            <div class="panel panel-default">
+                <div class="panel-heading bg-sea">
+                    <h4>Guidewire ClaimCenter
+                        <small>vs</small>
+                        Mitchell SmartAdvisor Integration
+                    </h4>
+                </div>
+                <div class="panel-body bg-sea">
+                    <div class="col-lg-4">
+                        <a href="https://www.guidewire.com" target="_blank"><img
+                                src="https://www.guidewire.com/sites/all/themes/guidewire/images/logos/guidewire_logo.svg"
+                                class="img-thumbnail bg-sea"/></a>
+                    </div>
+                    <div class="col-lg-8 bg-sea txt-black">
+                        <h3 class="">Implemented CC-CEP integration -
+                            <button class="btn btn-lg btn-skill">Single Sign-On</button>
+                            Using
+                            <button class="btn btn-lg btn-skill">JAVA</button>
+                            &
+                            <button class="btn btn-lg btn-skill">GOSU</button>
+                            Based On
+                            <button class="btn btn-lg btn-skill">SAML2</button>
+                        </h3>
+                        <div align="justify">CC-CEP integration is an important integration between Guidewire
+                            ClaimCenter suite and Mitchell SmartAdvisor for send/receive working
+                            Personal Auto and
+                            Worker's Compensation Claim.<br/>
+                            The key of this integration to have access to bill level details directly
+                            from Guidewire
+                            ClaimCenter without login to CEP and approve/deny bills hold it by
+                            <strong>SSO(Single Sign-On)</strong>.
+                        </div>
+                        <a class="pull-right btn btn-gnd" target="_blank"
+                           href="https://mitchell.guidewire.com/wiki/display/MISA/CC-CEP+integration+-+Single+Sign-On">Visit
+                            Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-		<div class="row bg-skye">
-			<div class="panel panel-default">
-				<div class="panel-heading bg-sea">
-					<!---->
-				</div>
-				<div class="panel-body bg-sea">
-					<div class="col-lg-4">
-					</div>
-					<div class="col-lg-8 bg-sea">
-						<br/><br/>
-					</div>
-				</div>
-			</div>
-		</div>
+        <div class="row bg-skye">
+            <div class="panel panel-default">
+                <div class="panel-heading bg-sea">
+                    <!---->
+                </div>
+                <div class="panel-body bg-sea">
+                    <div class="col-lg-4">
+                    </div>
+                    <div class="col-lg-8 bg-sea">
+                        <br/><br/>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-	</div>
+    </div>
 </div>
 <!--end skill-section-->
 <br/><br/><br/><br/>
 
 <!--start-social-section-->
 <footer class=footer>
-	<div class='animated container'>
-		<img src="images/logos/logo-s.svg" class=footer-logo>
-		<ul class='text-center footer-social' id="contact">
-			<p><b><h3>Contact Me</h3></b></p>
-			<br/>
-			<h6><b>It would be great to hear from you!</b></h6>
-			<br/><br/>
-			<li>
-				<a href="mailto:naderi.ghodrat@gmail.com" target="_blank"><img src="images/social/email.png" border="10" alt="Email"></a>&nbsp;&nbsp;
-			</li>
-			<li><a href="skype:naderi.ghodrat?call"><img src="images/social/skype.png" border="10" alt="Email"></a>&nbsp;&nbsp;
-			</li>
-			<li>
-				<a href="https://ie.linkedin.com/in/naderighodrat" id="linkedIn" target="_blank"><img src="images/social/linkedIn.png" border="10" alt="LinkedIn"></a>&nbsp;&nbsp;
-			</li>
-			<li>
-				<a href="https://github.com/naderighodrat" target="_blank"><img src="images/social/github.png" border="10" alt="GitHub"></a>&nbsp;&nbsp;
-			</li>
-			<li>
-				<a href="https://www.facebook.com/naderi.ghodrat" target="_blank"><img src="images/social/facebook.png" border="10" alt="Facebook"></a>&nbsp;&nbsp;
-			</li>
-			<li>
-				<a href="https://twitter.com/naderighodrat" target="_blank"><img src="images/social/twitter.png" border="10" alt="Twitter"></a>&nbsp;&nbsp;
-			</li>
-			<li><a href="#" target="_blank"><img src="images/social/instagrams.png" border="10" alt="Instagram"></a>&nbsp;&nbsp;
-			</li>
+    <div class='animated container'>
+        <img src="images/logos/logo-s.svg" class=footer-logo>
+        <ul class='text-center footer-social' id="contact">
+            <p><b><h3>Contact Me</h3></b></p>
+            <br/>
+            <h6><b>It would be great to hear from you!</b></h6>
+            <br/><br/>
+            <li>
+                <a href="mailto:naderi.ghodrat@gmail.com" target="_blank"><img src="images/social/email.png" border="10"
+                                                                               alt="Email"></a>&nbsp;&nbsp;
+            </li>
+            <li><a href="skype:naderi.ghodrat?call"><img src="images/social/skype.png" border="10" alt="Email"></a>&nbsp;&nbsp;
+            </li>
+            <li>
+                <a href="https://ie.linkedin.com/in/naderighodrat" id="linkedIn" target="_blank"><img
+                        src="images/social/linkedIn.png" border="10" alt="LinkedIn"></a>&nbsp;&nbsp;
+            </li>
+            <li>
+                <a href="https://github.com/naderighodrat" target="_blank"><img src="images/social/github.png"
+                                                                                border="10" alt="GitHub"></a>&nbsp;&nbsp;
+            </li>
+            <li>
+                <a href="https://www.facebook.com/naderi.ghodrat" target="_blank"><img src="images/social/facebook.png"
+                                                                                       border="10" alt="Facebook"></a>&nbsp;&nbsp;
+            </li>
+            <li>
+                <a href="https://twitter.com/naderighodrat" target="_blank"><img src="images/social/twitter.png"
+                                                                                 border="10" alt="Twitter"></a>&nbsp;&nbsp;
+            </li>
+            <li><a href="#" target="_blank"><img src="images/social/instagrams.png" border="10" alt="Instagram"></a>&nbsp;&nbsp;
+            </li>
 
-		</ul>
+        </ul>
 
-		<div class='bottom-menu-align'>
-			<div class='col-sm-6 col-md-3  footer-link-holder'>
-			</div>
-			<div class='col-sm-6 col-md-3  footer-link-holder'>
-				<h3 class=footer-link-title> Services</h3>
-				<ul class='animated footer-links'>
-					<li class='menu-top'><a href="pages/cv.html">CV</a></li>
-					<li class='menu-top'><a href="pages/git.html">Git</a></li>
-					<li class='menu-top'><a href="www.gnaderi.com">gnaderi.com</a></li>
-				</ul>
-				<br/>
-				<br/>
-			</div>
+        <div class='bottom-menu-align'>
+            <div class='col-sm-6 col-md-3  footer-link-holder'>
+            </div>
+            <div class='col-sm-6 col-md-3  footer-link-holder'>
+                <h3 class=footer-link-title> Services</h3>
+                <ul class='animated footer-links'>
+                    <li class='menu-top'><a href="pages/cv.html">CV</a></li>
+                    <li class='menu-top'><a href="pages/git.html">Git</a></li>
+                    <li class='menu-top'><a href="www.gnaderi.com">gnaderi.com</a></li>
+                </ul>
+                <br/>
+                <br/>
+            </div>
 
-			<div class='col-sm-6 col-md-3  footer-link-holder'>
-				<h3 class=footer-link-title> Company</h3>
-				<ul class='animated footer-links'>
-					<li class='menu-top'><a href="#">Blog</a></li>
-					<li class='menu-top'><a href="#">About</a></li>
-					<li class='menu-top'><a href="#">Team</a></li>
-					<br/> <br/>
+            <div class='col-sm-6 col-md-3  footer-link-holder'>
+                <h3 class=footer-link-title> Company</h3>
+                <ul class='animated footer-links'>
+                    <li class='menu-top'><a href="#">Blog</a></li>
+                    <li class='menu-top'><a href="#">About</a></li>
+                    <li class='menu-top'><a href="#">Team</a></li>
+                    <br/> <br/>
 
-				</ul>
-			</div>
-		</div>
-	</div>
-	<div class="copy-right">
-		<div class="container">
-			<div class="footer-top">
-				<p class="lead"><h5>&copy; 2016 <span></span> All rights reserved | Design by
-				<a href="https://ie.linkedin.com/in/naderighodrat"> Ghodrat Naderi</a></h5></p>
-			</div>
-			<script type="text/javascript">
-				$(document).ready(function () {
-					/*
-					 var defaults = {
-					 containerID: 'toTop', // fading element id
-					 containerHoverID: 'toTopHover', // fading element hover id
-					 scrollSpeed: 1200,
-					 easingType: 'linear'
-					 };
-					 */
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="copy-right">
+        <div class="container">
+            <div class="footer-top">
+                <p class="lead"><h5>&copy; 2016 <span></span> All rights reserved | Design by
+                <a href="https://ie.linkedin.com/in/naderighodrat"> Ghodrat Naderi</a></h5></p>
+            </div>
+            <script type="text/javascript">
+                $(document).ready(function () {
+                    /*
+                     var defaults = {
+                     containerID: 'toTop', // fading element id
+                     containerHoverID: 'toTopHover', // fading element hover id
+                     scrollSpeed: 1200,
+                     easingType: 'linear'
+                     };
+                     */
 
-					$().UItoTop({easingType: 'easeOutQuart'});
+                    $().UItoTop({easingType: 'easeOutQuart'});
 
-				});
-			</script>
-			<a href="#" id="toTop" style="	display: block;"> <span id="toTopHover" style='opacity: 10;'> </span></a>
-		</div>
-	</div>
-	<!--end-copy-right-->
+                });
+            </script>
+            <a href="#" id="toTop" style="	display: block;"> <span id="toTopHover" style='opacity: 10;'> </span></a>
+        </div>
+    </div>
+    <!--end-copy-right-->
 </footer>
 </body>
 </html>

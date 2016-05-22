@@ -56,13 +56,21 @@
 					<li class="menu"><a href="../pages/git.html">Git</a></li>
 					<li class="menu active"><a href="letters.html">Letters</a></li>
 					<li class="menu"><a href="#">Blog</a></li>
+					<!--    <li>
+                            <form class="navbar-form navbar-left" action="https://www.google.com/search?g=">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Search">
+                                </div>
+                                <button type="submit" class="btn-search">Search</button>
+                            </form>
+                        </li>-->
 					<li>
-						<form class="navbar-form navbar-left" action="https://www.google.com/search?g=">
-							<div class="form-group">
-								<input type="text" class="form-control" placeholder="Search">
-							</div>
-							<button type="submit" class="btn-search">Search</button>
-						</form>
+						<div class="navbar-form navbar-left">
+							<form ng-submit="vm.search()">
+								<input class="search-box" ng-model="vm.searchText" placeholder=" Search">
+								<button class="search-button" ng-click="vm.search()">&nbsp;</button>
+							</form>
+						</div>
 					</li>
 					<li class="menu"><a href="#">Login</a></li>
 					<li><br/></li>

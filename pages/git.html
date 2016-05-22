@@ -54,13 +54,21 @@
                     <li class="menu"><a href="../pages/cv.html">CV</a></li>
                     <li class="menu active"><a href="#">Git</a></li>
                     <li class="menu"><a href="#">Blog</a></li>
+                    <!--    <li>
+                            <form class="navbar-form navbar-left" action="https://www.google.com/search?g=">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Search">
+                                </div>
+                                <button type="submit" class="btn-search">Search</button>
+                            </form>
+                        </li>-->
                     <li>
-                        <form class="navbar-form navbar-left" action="https://www.google.com/search?g=">
-                            <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Search">
-                            </div>
-                            <button type="submit" class="btn-search">Search</button>
-                        </form>
+                        <div class="navbar-form navbar-left">
+                            <form ng-submit="vm.search()">
+                                <input class="search-box" ng-model="vm.searchText" placeholder=" Search">
+                                <button class="search-button" ng-click="vm.search()">&nbsp;</button>
+                            </form>
+                        </div>
                     </li>
                     <li class="menu"><a href="#">Login</a></li>
                     <li><br/></li>
@@ -392,21 +400,26 @@
             <h6><b>It would be great to hear from you!</b></h6>
             <br/><br/>
             <li>
-                <a href="mailto:naderi.ghodrat@gmail.com" target="_blank"><img src="../images/social/email.png" border="10" alt="Email"></a>&nbsp;&nbsp;
+                <a href="mailto:naderi.ghodrat@gmail.com" target="_blank"><img src="../images/social/email.png"
+                                                                               border="10" alt="Email"></a>&nbsp;&nbsp;
             </li>
             <li><a href="skype:naderi.ghodrat?call"><img src="../images/social/skype.png" border="10" alt="Email"></a>&nbsp;&nbsp;
             </li>
             <li>
-                <a href="https://ie.linkedin.com/in/naderighodrat" id="linkedIn" target="_blank"><img src="../images/social/linkedIn.png" border="10" alt="LinkedIn"></a>&nbsp;&nbsp;
+                <a href="https://ie.linkedin.com/in/naderighodrat" id="linkedIn" target="_blank"><img
+                        src="../images/social/linkedIn.png" border="10" alt="LinkedIn"></a>&nbsp;&nbsp;
             </li>
             <li>
-                <a href="https://github.com/naderighodrat" target="_blank"><img src="../images/social/github.png" border="10" alt="GitHub"></a>&nbsp;&nbsp;
+                <a href="https://github.com/naderighodrat" target="_blank"><img src="../images/social/github.png"
+                                                                                border="10" alt="GitHub"></a>&nbsp;&nbsp;
             </li>
             <li>
-                <a href="https://www.facebook.com/naderi.ghodrat" target="_blank"><img src="../images/social/facebook.png" border="10" alt="Facebook"></a>&nbsp;&nbsp;
+                <a href="https://www.facebook.com/naderi.ghodrat" target="_blank"><img
+                        src="../images/social/facebook.png" border="10" alt="Facebook"></a>&nbsp;&nbsp;
             </li>
             <li>
-                <a href="https://twitter.com/naderighodrat" target="_blank"><img src="../images/social/twitter.png" border="10" alt="Twitter"></a>&nbsp;&nbsp;
+                <a href="https://twitter.com/naderighodrat" target="_blank"><img src="../images/social/twitter.png"
+                                                                                 border="10" alt="Twitter"></a>&nbsp;&nbsp;
             </li>
             <li><a href="#" target="_blank"><img src="../images/social/instagrams.png" border="10" alt="Instagram"></a>&nbsp;&nbsp;
             </li>
@@ -465,7 +478,6 @@
     </div>
     <!--end-copy-right-->
 </footer>
-
 
 
 </body>
