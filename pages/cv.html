@@ -38,17 +38,23 @@
 </http-equivad>
 <body class="fbody" data-offset=90 data-spy=scroll">
 <header>
-    <nav class='navbar navbar-fixed-top navbar-default' role=navigation>
-        <div class=container>
-            <div class=navbar-header>
-                <button class=navbar-toggle data-toggle=collapse type=button><span
-                        class=sr-only> Toggle Navigation </span> <span class=icon-bar></span> <span
-                        class=icon-bar></span> <span class=icon-bar></span></button>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                        aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class=icon-bar></span>
+                    <span class=icon-bar></span>
+                    <span class=icon-bar></span></button>
+
                 <a class='navbar-brand animated' href='../index.html'>
                     <img src="../images/logos/logo-s.svg" class="nav-logo"></a>
             </div>
-            <div class="collapse navbar-collapse">
-                <ul class='nav navbar-nav animated'>
+            <!--  <div class="collapse navbar-collapse">
+                  <ul class='nav navbar-nav animated'>-->
+            <div id="navbar" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
                     <li class=" menu"><a href="../index.html">Home</a></li>
                     <li class="menu active"><a href="#">CV</a></li>
                     <li class="menu"><a href="git.html">Git</a></li>
@@ -116,22 +122,18 @@
 <div class="row cv-bg txt-black-center">
     <h3>Curriculum Vitae of Ghodrat</h3>
     <div class="col-sm-4 cv-page">
-        <img src="../images/cv/CV_P1.png" width="80%" height="85%">
         <h5>Page 1</h5>
+        <img src="../images/cv/CV_P1.png">
     </div>
     <div class="col-sm-4 cv-page">
-        <img src="../images/cv/CV_P2.png" width="80%" height="85%">
         <h5>Page 2 </h5>
+        <img src="../images/cv/CV_P2.png">
     </div>
     <div class="col-sm-4 cv-page">
-        <img src="../images/cv/CV_P3.png" width="80%" height="85%">
         <h5>Page 3 </h5>
-        <br/><br/>
-        <br/><br/>
-
+        <img src="../images/cv/CV_P3.png">
     </div>
 </div>
-<br/><br/>
 
 <!--start-social-section-->
 <footer class=footer>
@@ -182,7 +184,7 @@
                 <br/> <br/>
             </div>
 
-            <div class='col-sm-6 col-md-3  footer-link-holder'>
+            <div class='col-sm-6 footer-link-holder'>
                 <h3 class=footer-link-title> Company</h3>
                 <ul class='animated footer-links'>
                     <li class='menu-top'><a href="#">Blog</a></li>

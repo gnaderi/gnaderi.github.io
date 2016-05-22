@@ -42,7 +42,7 @@ a:focus, a:active {
 }
 
 h1, h3, h4, h5, button, a {
-    font-weight: 400
+    font-weight: 200
 }
 
 .light {
@@ -94,6 +94,25 @@ img {
 }
 
 @media (min-width: 767px) {
+    .btn-skill {
+        border: 1px solid #548;
+        border-radius: 3px;
+        padding: 4px 20px;
+        margin-left: 25px;
+        margin-top: 9px;
+        background-color: #fff;
+        color: #548;
+        font-weight: 400
+    }
+
+    .btn-skill:hover, .btn-skill:focus {
+        background-color: #548;
+        color: #fff;
+        outline: 0
+    }
+}
+
+@media (max-width: 767px) {
     .btn-skill {
         border: 1px solid #548;
         border-radius: 3px;
@@ -248,28 +267,103 @@ img {
 }
 
 .bg-cert {
-    padding-top: 10px;
-    background: url("../../images/sky.png") repeat 1px 1px;
+    padding-top: 20px;
+    background: url("../../images/sky.png") repeat 0px 0px;
     opacity: 1;
     padding-bottom: 30px;
+    margin-top: 5.5em;
+    margin-bottom: 5.5em;
 }
 
-.intro {
-    background-image: url(../../images/logos/eagle.jpg);
-    border: solid 2px;
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: contain;
-    color: #000000;
-    font-size: 1.5em;
-    height: 1000px;
-
+.cert {
+    height: 90%;
+    width: 90%;
 }
+
+@media (min-width: 800px) {
+    .intro {
+        background: url(../../images/logos/eagle.jpg);
+        border: solid 2px;
+        background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: contain;
+        color: #000000;
+        font-size: 1.5em;
+        height: 1000px;
+    }
+    span.glyphicon.glyphicon-triangle-bottom {
+        font-size: 2em;
+        color: #fff;
+        background-color: #a35633;
+        padding: 0.5em 2em;
+        border-radius: 5px 5px 0 0;
+        margin-top: 2em;
+        margin-left: 10em;
+    }
+}
+
+@media (max-width: 800px) {
+    .intro {
+        background: url(../../images/logos/eagle-m.png);
+        border: solid 2px;
+        background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: contain;
+        color: #000000;
+        font-size: 1.5em;
+        height: 800px;
+        width: auto;
+
+    }
+    span.glyphicon.glyphicon-triangle-bottom {
+        font-size: 1em;
+        color: #fff;
+        background-color: #a35633;
+        padding: 0.5em 2em;
+        border-radius: 2px 2px 0 0;
+        margin-top: 1.5em;
+        margin-left: 7em;
+    }
+    .about {
+        color: white;
+    }
+}
+
+@media (max-width: 400px) {
+    .intro {
+        background: url(../../images/logos/eagle-s.png);
+        border: solid 2px;
+        background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: contain;
+        color: #000000;
+        font-size: 1.5em;
+        height: 600px;
+        width: auto;
+
+    }
+    span.glyphicon.glyphicon-triangle-bottom {
+        font-size:inherit;
+        color: #fff;
+        background-color: #a35633;
+        padding: 0.5em 2em;
+        border-radius: 1px 1px 0 0;
+        margin-top: 1em;
+        margin-left: 5em;
+    }
+    .about {
+        color: white;
+    }
+}
+
 .about {
     padding-top: 50px;
     text-align: left;
 }
+
 body a {
     transition: 0.5s all;
     -webkit-transition: 0.5s all;
@@ -293,15 +387,6 @@ ul {
     margin: 0 0;
 }
 
-span.glyphicon.glyphicon-triangle-bottom {
-    font-size: 2em;
-    color: #fff;
-    background-color: #a35633;
-    padding: 0.5em 2em;
-    border-radius: 5px 5px 0 0;
-    margin-top: 1em;
-    margin-left: 10em;
-}
 
 .experience-section {
     padding: 4em 0;
@@ -323,7 +408,7 @@ span.exclamation {
 .experience a {
     padding-left: 5px;
     padding-right: 10px;
-    color: #ffffff;
+    color: #b7e9ff;
     font-size: 1.0em;
 }
 
@@ -332,6 +417,41 @@ span.exclamation {
     padding-right: 5px;
     color: #ffffff;
     font-size: 1.1em;
+}
+
+@media (max-width: 767px) {
+
+    .experience-section {
+        padding: 2em 0;
+    }
+
+    span.exclamation {
+        color: #aa3311;
+        font-size: 1.5em;
+    }
+
+    .experience {
+        padding: 1em 0 0;
+        margin: 0 0 0 7px;
+        font-size: 1.1em;
+        font-weight: 400;
+        color: #ffffff;
+    }
+
+    .experience a {
+        padding-left: 5px;
+        padding-right: 10px;
+        color: #b7e9ff;
+        font-size: .7em;
+    }
+
+    .experience label {
+        padding-left: 5px;
+        padding-right: 5px;
+        color: #ffffff;
+        font-size: 0.8em;
+    }
+
 }
 
 input[type="text"].form-control {
@@ -480,11 +600,15 @@ ul.nav a:hover {
 .cv-bg {
     background: #ffffff;
     border: 2px solid black;
+    margin-bottom: 2.5em;
 }
 
 .cv-page {
-    width: 33%;
     border-right: 2px solid #e28c0d;
+}
+
+.cv-page h5 {
+    margin-bottom: 2.5em;
 }
 
 .search-box {

@@ -13,6 +13,9 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta name="keywords" content="My Skills Responsive web template, Bootstrap Web Templates,"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+    </style>
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
 
@@ -38,17 +41,23 @@
 </http-equivad>
 <body class="fbody" data-offset=90 data-spy=scroll">
 <header>
-    <nav class='navbar navbar-fixed-top navbar-default' role=navigation>
-        <div class=container>
-            <div class=navbar-header>
-                <button class=navbar-toggle data-toggle=collapse type=button><span
-                        class=sr-only> Toggle Navigation </span> <span class=icon-bar></span> <span
-                        class=icon-bar></span> <span class=icon-bar></span></button>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                        aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class=icon-bar></span>
+                    <span class=icon-bar></span>
+                    <span class=icon-bar></span></button>
+
                 <a class='navbar-brand animated' href='index.html'>
                     <img src="images/logos/logo-s.svg" class="nav-logo"></a>
             </div>
-            <div class="collapse navbar-collapse">
-                <ul class='nav navbar-nav animated'>
+            <!--  <div class="collapse navbar-collapse">
+                  <ul class='nav navbar-nav animated'>-->
+            <div id="navbar" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
                     <li class=" menu active"><a href="index.html">Home</a></li>
                     <li class="menu"><a href="pages/cv.html">CV</a></li>
                     <li class="menu"><a href="pages/git.html">Git</a></li>
@@ -86,7 +95,7 @@
     <div class='col-md-3 hidden-sm hidden-xs'>
         <br>
     </div>
-    <div class='col-md-6 hidden-sm hidden-xs about'>
+    <div class='col-md-6 about'>
         <h1>A little about me...<span class="exclamation">!</span></h1>
         <ul>
             <li>My name is Ghodrat</li>
@@ -95,19 +104,17 @@
             <li> I enjoy helping others to reach their goals. Reach out if I can help in any way.</li>
             <br/>
             <p>
-                My main hobbies/interests in life are traveling, coding, and gaming. second subject also happen to be my
-                main sources of income. I seem to have a habit of turning my personal hobbies into business, which is
+                My main hobbies/interests in life are traveling, coding, and gaming. Coding also happen to be my
+                profession. I like to turning my personal hobbies into business, which is
                 great because I get to make a living doing the things I love.
             </p>
             <br/>
             <p>
-                Beyond life on the Internet I live with my lovely wife. I enjoy taking videos/photo
-                of exciting events, so if you want to join me on life’s adventures be sure to <a href="#">subscribe</a>.
+                Beyond life on the Internet I live with my lovely wife. I enjoy traveling and visiting exciting places,
+                so if you want to join me on life’s adventures be sure to <a href="#">subscribe</a>.
             </p>
-            <a href="#contact" class="scroll top">
-                <span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true">
-
-                </span>
+            <a href="#contact" class="scroll top"><span class="glyphicon glyphicon-triangle-bottom"
+                                                        aria-hidden="true"></span>
             </a>
         </ul>
     </div>
@@ -139,8 +146,7 @@
             </div>
             <div class="experience">
                 <label>Associate Degree, Software Eng'</label>(2003-2005)<a href="http://en.vru.ac.ir/"> Vali-e-Asr
-                University of
-                Rafsanjan</a>
+                University of Rafsanjan</a>
             </div>
         </div>
 
@@ -167,32 +173,23 @@
             </div>
             <div class="experience">
                 <a href="http://www.mobinone.org/" target="_blank">Mobin One Kish, Tehran, Iran</a><label> Senior Java
-                Developer
-                ( Oct 2011 -
-                Oct
-                2012)</label>
+                Developer( Oct 2011 - Oct 2012)</label>
             </div>
             <div class="experience">
                 <a href="http://www.caspco.com" target="_blank">CASPian Co, Tehran, Iran</a><label> Developer( Apr 2011
                 - Oct 2011 )</label>
             </div>
             <div class="experience">
-                <a href="http://www.douran.com" target="_blank">Douran Data Processing Co, Tehran, Iran</a><label>Developer
-                ( Aug
-                2010 -
-                Apr
-                2011
-                )</label>
+                <a href="http://www.douran.com" target="_blank">Douran Data Processing Co, Tehran, Iran</a><label>Developer(
+                Aug 2010 -Apr 2011)</label>
             </div>
             <div class="experience">
-                <a href="http://www.dezab.com" target="_blank">Dezab Co, Ahwaz, Iran</a><label>Developer ( Jan2008 - Oct
-                2009)</label>
+                <a href="http://www.dezab.com" target="_blank">Dezab Co, Ahwaz, Iran</a><label>Developer ( Jan2008 -
+                Oct2009)</label>
             </div>
             <div class="experience">
                 <a href="http://www.izehiau.ac.ir" target="_blank">Azad University, Izeh, Iran </a><label>TeacherAssistance
-                Sep 2007 - Aug
-                2009 (Part
-                Time) </label>
+                Sep 2007 - Aug 2009 (Part Time) </label>
             </div>
         </div>
     </div>
@@ -292,7 +289,7 @@
                         <button class="btn btn-skill">C/C++, C#</button>
                         <button class="btn btn-skill">Andriod</button>
                         <button class="btn btn-skill">Matlab</button>
-                        <button class="btn btn-skill">GOSU(Guidewire Company Langauge)</button>
+                        <button class="btn btn-skill">GOSU(Guidewire PL)</button>
                         <button class="btn btn-skill">Git, Svn</button>
                         <button class="btn btn-skill">Apache Tomcat, Jboss</button>
                         <button class="btn btn-skill">UML, Agile, Scrum</button>
@@ -304,35 +301,23 @@
         </div>
     </div>
 </div>
-<br/>
-<br/>
-<br/>
+<!--End of Skills-->
+
 <!--Certificate Section-->
-<div class=" row bg-cert text-center txt-black">
-    <h1 class=" txt-black">My Certificates </h1>
-    <div class="col-sm-6">
+<div class="row bg-cert txt-black-center">
+    <h1 class="txt-black">My Certificates </h1>
+    <div class="col-sm-5">
         <a href="pdf/CSM_Certificate.pdf" target="_blank">
-            <img src="images/CSM_Certificate.png" width="50%" height="50%">
+            <img class="cert" src="images/CSM_Certificate.png">
             <h5 class="txt-black">Certified ScrumMaster<span>®</span></h5></a>
     </div>
-    <div class="col-sm-6">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-5">
         <a href="pdf/LawRoom_Certificate.pdf" target="_blank">
-            <img src="images/Lawroom.png" width="45%" height="45%">
+            <img class="cert" src="images/Lawroom.png">
             <h5 class="txt-black">Information Security & Privacy</h5></a>
     </div>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
 </div>
-
-<!--End of Skills-->
-<br/>
-<br/>
-<br/>
-<br/>
 
 <!--Project that I am working on it-->
 <div class="container bg-grey">
@@ -354,7 +339,7 @@
                                 class="img-thumbnail bg-sea"/></a>
                     </div>
                     <div class="col-lg-8 bg-sea txt-black">
-                        <h3 class="">Implemented CC-CEP integration -
+                        <h4>Implemented CC-CEP integration -
                             <button class="btn btn-lg btn-skill">Single Sign-On</button>
                             Using
                             <button class="btn btn-lg btn-skill">JAVA</button>
@@ -362,8 +347,10 @@
                             <button class="btn btn-lg btn-skill">GOSU</button>
                             Based On
                             <button class="btn btn-lg btn-skill">SAML2</button>
-                        </h3>
-                        <div align="justify">CC-CEP integration is an important integration between Guidewire
+                        </h4>
+                        <h5>
+
+                            CC-CEP integration is an important integration between Guidewire
                             ClaimCenter suite and Mitchell SmartAdvisor for send/receive working
                             Personal Auto and
                             Worker's Compensation Claim.<br/>
@@ -371,7 +358,7 @@
                             from Guidewire
                             ClaimCenter without login to CEP and approve/deny bills hold it by
                             <strong>SSO(Single Sign-On)</strong>.
-                        </div>
+                        </h5>
                         <a class="pull-right btn btn-gnd" target="_blank"
                            href="https://mitchell.guidewire.com/wiki/display/MISA/CC-CEP+integration+-+Single+Sign-On">Visit
                             Project</a>
@@ -398,7 +385,6 @@
     </div>
 </div>
 <!--end skill-section-->
-<br/><br/><br/><br/>
 
 <!--start-social-section-->
 <footer class=footer>
