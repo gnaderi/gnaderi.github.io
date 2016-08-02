@@ -634,3 +634,7 @@ ul.nav a:hover {
     height: 30px;
     vertical-align: top
 }
+.page-content{
+    padding-top: 9.5em;
+    margin-top: 4em;
+}
