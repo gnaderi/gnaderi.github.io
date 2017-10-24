@@ -221,7 +221,7 @@ img {
 }
 
 .txt-black-center {
-    color: #000000;
+    color: #fcffec;
     text-align: center;
     margin-top: 2.5em;
     padding-top: inherit;
@@ -282,7 +282,7 @@ img {
 
 @media (min-width: 800px) {
     .intro {
-        background: url(../../images/logos/eagle.jpg);
+        background: url(../../images/sky.png);
         border: solid 2px;
         background-size: cover;
         -webkit-background-size: cover;
@@ -333,7 +333,7 @@ img {
 
 @media (max-width: 400px) {
     .intro {
-        background: url(../../images/logos/eagle-s.png);
+        background: url(../../images/sky.png);
         border: solid 2px;
         background-size: cover;
         -webkit-background-size: cover;
@@ -597,11 +597,7 @@ ul.nav a:hover {
     text-align: left;
 }
 
-.cv-bg {
-    background: #ffffff;
-    border: 2px solid black;
-    margin-bottom: 2.5em;
-}
+
 
 .cv-page {
     border-right: 2px solid #e28c0d;
@@ -637,4 +633,74 @@ ul.nav a:hover {
 .page-content{
     padding-top: 9.5em;
     margin-top: 4em;
+}
+
+
+/*
+   general styles
+*/
+.center-block-horiz {
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+.set-margin-cicis-menu-to-go {
+    margin: 20px;
+}
+.set-padding-cicis-menu-to-go {
+    padding: 20px;
+}
+.set-border-cicis-menu-to-go {
+    border: 5px inset #4f4f4f;
+}
+.set-box-shadow-cicis-menu-to-go {
+    -webkit-box-shadow: 4px 4px 14px #4f4f4f;
+    -moz-box-shadow: 4px 4px 14px #4f4f4f;
+    box-shadow: 4px 4px 14px #4f4f4f;
+}
+
+/*
+** Style the iframe
+** =========================
+*/
+/*
+    css commmon to all iframes
+*/
+.responsive-wrapper {
+    position: relative;
+    height: 0;    /* gets height from padding-bottom */
+    overflow: hidden;
+    /* put following styles (necessary for overflow and
+       scrolling handling) inline in .embed-responsive-element-wrapper around iframe because not stable in CSS
+      -webkit-overflow-scrolling: touch;
+                        overflow: auto; */
+}
+.responsive-wrapper img,
+.responsive-wrapper object,
+.responsive-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    border-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/*
+    css particular to this iframe
+*/
+
+#Iframe-Cicis-Menu-To-Go {
+    max-width: 70%;
+    max-height: 80%;
+    overflow: hidden;
+}
+/*
+   padding-bottom = h/w as %
+*/
+.responsive-wrapper-padding-bottom-90pct {
+    padding-bottom: 90%;
+
 }
